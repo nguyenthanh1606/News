@@ -1,0 +1,66 @@
+.content-body{
+    .title{
+        font-family: $font-title;
+        color: $color-primary;
+        font-size: 3rem;
+    }
+}
+.page-group{
+    h3.title{
+        font-size: 3.5rem;
+        font-family: $font-title;
+        position: relative;
+        &:after {
+            content: url('../../../images/CaringLife/bg1.png');
+            position: absolute;
+            right: -27px;
+            top: -27px;
+        }
+    }
+    .list-group{
+        ul{
+            font-size:0;
+            padding: 0;
+            list-style-type: none;
+            li{
+                font-size: 1rem;
+                padding: 10px 1.5rem;
+                position: relative;
+                &:not(:last-child){
+                    &:after{
+                        content: '';
+                        position: absolute;
+                        z-index: 9;
+                        bottom: 0;
+                        right: 0;
+                        width: 40%;
+                        height: 1px;
+                        background: rgb(206,169,183);
+                        background: linear-gradient(90deg, rgba(206,169,183,1) 0%, rgba(255,255,255,0) 100%);    }
+                    }
+                a{
+                    color: $color-text;
+                    &:hover{
+                        color: $color-primary;
+                    }                    
+                }
+                &.active{
+                    a
+                    {
+                        color: $color-primary;
+                        &:after{
+                            content: '\f0da';
+                            position: absolute;
+                            right: 0;
+                            top: 50%;
+                            color: $color-primary;
+                            font-family: 'Font Awesome 5 Pro';
+                            font-weight: 900;
+                            line-height: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

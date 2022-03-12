@@ -1,0 +1,102 @@
+.breadcrumb-ds {
+    // margin-top: -100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        z-index: 9;
+        bottom: 0;
+        left: 0;
+        width: 40%;
+        height: 1px;
+        background: rgb(206,169,183);
+        background: linear-gradient(90deg, rgba(206,169,183,1) 0%, rgba(255,255,255,0) 100%);    }
+    
+    ul{
+        margin-bottom: 0;
+        padding-left: 1.5rem;
+        display: inline-block;
+        font-size: 0;
+        li{
+            font-size: 1rem;
+            display: inline-block;
+            padding-right: 10px;
+            padding-bottom: 5px;
+            
+            &:not(:last-child){
+                a{
+                    font-family: $font-default;
+                    color: #5d5e5f;
+                }
+            }
+            &:last-child{
+                a{
+                    pointer-events: none;
+                    color: $color-main;
+                }
+            }
+            &:not(:last-child):after{
+                content: "\f0da";
+                font-family: 'Font Awesome 5 Pro';
+                font-weight: 900;
+                padding-left: 10px;
+                color: $color-3;
+            }
+            i,svg{
+                color: $color-3;
+            }
+        }
+    }
+}
+
+
+// .breadcrumb-ds{
+//     padding-top: 0.5rem;
+//     position: relative;
+//     min-width: 33%;
+//     border-bottom: 1px solid #ccc;
+//     &:before{
+//         content: "";
+//         width: 3px;
+//         height: 1.8rem;
+//         position: absolute;
+//         bottom: 0;
+//         left: 0;
+//         background-color: $color-main;
+//     }
+//     ul{
+//         margin-bottom: 0;
+//         padding-left: 1.5rem;
+//         display: inline-block;
+//         font-size: 0;
+//         li{
+//             font-size: 1rem;
+//             display: inline-block;
+//             padding-right: 10px;
+//             padding-bottom: 5px;
+            
+//             &:not(:last-child){
+//                 a{
+//                     font-family: 'UTM-Avo';
+//                     color: #5d5e5f;
+//                 }
+//             }
+//             &:last-child{
+//                 a{
+//                     pointer-events: none;
+//                     color: $color-main;
+//                 }
+//             }
+//             &:not(:last-child):after{
+//                 content: "\f0da";
+//                 font-family: 'Font Awesome 5 Pro';
+//                 font-weight: 900;
+//                 padding-left: 10px;
+//                 color: #5d5e5f;
+//             }
+//         }
+//     }
+// }

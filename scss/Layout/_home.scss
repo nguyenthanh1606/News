@@ -1,0 +1,57 @@
+@import '../Pages/home/_abouts.scss';
+@import '../Pages/home/_product.scss';
+@import '../Pages/home/_event.scss';
+@import '../Pages/home/_news.scss';
+@import '../Pages/home/_answer.scss';
+@import '../Pages/home/_download.scss';
+
+main{
+    position: relative;
+    &.p-home{
+        &::before{
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 40%;
+            background: url('../../images/CaringLife/bg-left.png') no-repeat center;
+            width: 900px;
+            height: 900px;
+            background-size: contain;
+            z-index: -1;
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: 10%;
+            background: url('../../images/CaringLife/bg-right.png') no-repeat right;
+            width: 900px;
+            height: 900px;
+            background-size: contain;
+            z-index: -1;
+        }
+    }    
+    section{
+        margin-bottom: 2.5rem;
+    }
+}
+.homeSwiper{
+    .swiper-pagination{
+        bottom: 45px;
+        &-bullet-active{
+            background-color: #fff;
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px){    
+    .homeSwiper{
+        img{
+            height: 300px !important;
+        }
+    }
+    h1.title, .products .products-title{
+        font-size: 2rem;
+    }
+}

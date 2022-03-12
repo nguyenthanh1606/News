@@ -1,0 +1,121 @@
+.first-line{
+    height: 8px;
+    background-color: $color-primary;
+}
+a{
+    color: $color-primary;
+    &:hover,&:active{
+        color: $color-primary;
+        text-decoration: none;
+    }
+}
+.title{
+    font-family: $font-menu;
+    color: $color-menu;
+}
+// animation
+.trans-op-75{
+    transition: all .4s ease-in-out;
+    opacity: .75;
+    &:hover{
+        opacity: 1;
+    }
+}
+
+.see-more, .btn-see-more{
+    position: relative;
+    transition: all .4s ease-in-out;
+    display: inline-block;
+    margin: 1rem auto 0;
+    overflow: hidden;
+    
+    a.see-more-link, button.see-more-link{
+        color: $color-primary;
+        text-transform: uppercase;
+        padding: 10px 1.5rem 10px;
+        display: inline-block;
+        position: relative;
+        &:after{
+            content:'';
+            position: absolute;
+            background-color: $color-primary;
+            width: 60%;
+            height: 1px;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &:hover, &:active, &:focus{
+        background-color: $color-primary;
+        a.see-more-link, button.see-more-link{
+            border: 0;
+            outline: none;
+            color: $color-white;
+            &:after {
+                background-color: $color-white;
+            }
+        }
+    }
+}
+.banner{
+    z-index: 1;
+    position: relative;
+}
+
+.i-number{
+    border: 1px solid #b4bbb8;
+    display: inline-block;
+    width: 60px;
+    height: 100%;
+    color: $color-primary;
+    &:focus,&:active{
+        border-color: $color-3;
+        outline: none;
+    }
+}
+.i-text{
+    border: 1px solid #b4bbb8;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: $color-primary;
+    &:focus,&:active{
+        border-color: $color-3;
+        outline: none;
+    }
+}
+.text-b{
+    font-weight: bold;
+}
+.color-3{
+    color: $color-3 !important;
+}
+.only-mb{
+    display: none;
+}
+.only-pc{
+    display: block;
+}
+.d-flex{
+    display: flex;
+    &.f-row{
+        flex-direction: row;
+    }
+    &.f-nowrap{
+        flex-wrap: nowrap;
+    }
+    &.f-space--between{
+        justify-content: space-between;
+    }
+}
+.main-page{
+    margin-bottom: 4rem;
+}
+@media screen and (max-width: 768px){
+    .only-mb{
+        display: block;
+    }
+    .only-pc{
+        display: none !important;
+    }
+}

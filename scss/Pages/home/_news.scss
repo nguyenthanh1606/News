@@ -1,0 +1,130 @@
+.news{
+    position: relative;
+    padding-top: 2.5rem;
+    &:not(.child):before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 40%;
+        height: 1px;
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,0.4962359943977591) 0%, rgba(204,204,204,1) 40%, rgba(204,204,204,1) 60%, rgba(255,255,255,1) 100%);    
+    }
+    .head{
+        width: 100%;
+        .title{
+            font-size: 3.5rem;
+            font-family: $font-title;
+            position: relative;
+            &:after {
+                content: url('../../../images/CaringLife/bg1.png');
+                position: absolute;
+                right: -27px;
+                top: -27px;
+            }
+        }
+        .sub{
+            width: 50%;
+            color: #5e5e5f;
+        }
+    }
+    .news-body{
+        .news-list{
+            // padding-top: 2rem;
+            padding-bottom: 3rem;
+            position: relative;
+            .sw-p1{
+                position: absolute;
+                bottom: 0;
+                display: flex;
+                justify-content: center;
+                .swiper-pagination-bullet{
+                    width: 50px;
+                    height: 4px;
+                    border-radius: 0;
+                }
+            }
+        }
+        .thumb{
+            @include thumnails-template(58.5%);
+            border-radius: 18px 18px 0 0;
+            box-shadow: 0 0 10px 1px #ccc;
+            img{
+                transition: all 0.3s ease-in-out;
+            }
+            &:hover{
+                img{
+                    transform: scale(1.1);
+                }
+            }
+        }
+        .news-item{
+            padding: 5px;
+            .title{
+                padding-top: 0.5rem;
+                font-size: 1.2rem;
+                font-family: $font-default;
+            }
+            .sub{
+                color: #b2afaf;
+                font-size: 0.9rem;
+            }
+            .news-content{
+                padding: 0 15px 20px;
+                box-shadow: 0 0 10px 1px #ccc;
+                border-radius: 0 0 18px 18px;
+            }
+            .desc{
+                margin-top: 5px;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-line-clamp: 4; /* number of lines to show */
+                        line-clamp: 4; 
+                -webkit-box-orient: vertical;
+            }
+        }
+    }
+    .sw-news-group{
+        padding-bottom: 3rem;
+        .swiper-pagination{
+            top: 0;
+            bottom: auto;
+            display: flex;
+            justify-content: center;
+        }
+        .swiper-wrapper{
+            padding-top: 40px;
+        }
+        .item-pagi{
+            display: inline-block;
+            width: auto;
+            height: auto;
+            padding: 5px 1.5rem;
+            border-radius: 1.25rem;
+            background-color: transparent;
+            opacity: 1;
+            &.swiper-pagination-bullet-active,&:hover{
+                background-color: $color-3;
+                span{
+                    color: #fff;
+                }
+            }
+            span{
+                font-family: $font-menu;
+            }
+        }
+    }    
+}
+
+@media screen and (max-width: 768px){
+    .news{
+        .bread{
+            &:before, &:after{
+                display: none;
+            }
+        }
+    }
+}

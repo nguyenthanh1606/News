@@ -1,0 +1,1535 @@
+/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+    line-height: 1.15;
+    /* 1 */
+    -webkit-text-size-adjust: 100%;
+    /* 2 */
+    position: relative;
+    height: 100%;
+}
+
+/* Sections
+     ========================================================================== */
+/**
+   * Remove the margin in all browsers.
+   */
+body {
+    margin: 0;
+    position: relative;
+    height: 100%;
+}
+
+/**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+/* Grouping content
+     ========================================================================== */
+/**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+hr {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    /* 1 */
+    height: 0;
+    /* 1 */
+    overflow: visible;
+    /* 2 */
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+pre {
+    font-family: monospace, monospace;
+    /* 1 */
+    font-size: 1em;
+    /* 2 */
+}
+
+/* Text-level semantics
+     ========================================================================== */
+/**
+   * Remove the gray background on active links in IE 10.
+   */
+a {
+    background-color: transparent;
+}
+
+/**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+abbr[title] {
+    border-bottom: none;
+    /* 1 */
+    text-decoration: underline;
+    /* 2 */
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted;
+    /* 2 */
+}
+
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+b,
+strong {
+    font-weight: bolder;
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+code,
+kbd,
+samp {
+    font-family: monospace, monospace;
+    /* 1 */
+    font-size: 1em;
+    /* 2 */
+}
+
+/**
+   * Add the correct font size in all browsers.
+   */
+small {
+    font-size: 80%;
+}
+
+/**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+/* Embedded content
+     ========================================================================== */
+/**
+   * Remove the border on images inside links in IE 10.
+   */
+img {
+    border-style: none;
+}
+
+/* Forms
+     ========================================================================== */
+/**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    /* 1 */
+    font-size: 100%;
+    /* 1 */
+    line-height: 1.15;
+    /* 1 */
+    margin: 0;
+    /* 2 */
+}
+
+/**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+button,
+input {
+    /* 1 */
+    overflow: visible;
+}
+
+/**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+button,
+select {
+    /* 1 */
+    text-transform: none;
+}
+
+/**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+
+    /**
+   * Remove the inner border and padding in Firefox.
+   */
+    button::-moz-focus-inner,
+    [type="button"]::-moz-focus-inner,
+    [type="reset"]::-moz-focus-inner,
+    [type="submit"]::-moz-focus-inner {
+        border-style: none;
+        padding: 0;
+    }
+
+    /**
+   * Restore the focus styles unset by the previous rule.
+   */
+    button:-moz-focusring,
+    [type="button"]:-moz-focusring,
+    [type="reset"]:-moz-focusring,
+    [type="submit"]:-moz-focusring {
+        outline: 1px dotted ButtonText;
+    }
+
+/**
+   * Correct the padding in Firefox.
+   */
+fieldset {
+    padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+legend {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /* 1 */
+    color: inherit;
+    /* 2 */
+    display: table;
+    /* 1 */
+    max-width: 100%;
+    /* 1 */
+    padding: 0;
+    /* 3 */
+    white-space: normal;
+    /* 1 */
+}
+
+/**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+progress {
+    vertical-align: baseline;
+}
+
+/**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+textarea {
+    overflow: auto;
+}
+
+/**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+[type="checkbox"],
+[type="radio"] {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /* 1 */
+    padding: 0;
+    /* 2 */
+}
+
+/**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+/**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+[type="search"] {
+    -webkit-appearance: textfield;
+    /* 1 */
+    outline-offset: -2px;
+    /* 2 */
+}
+
+    /**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+    [type="search"]::-webkit-search-decoration {
+        -webkit-appearance: none;
+    }
+
+/**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    /* 1 */
+    font: inherit;
+    /* 2 */
+}
+
+/* Interactive
+     ========================================================================== */
+/*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+details {
+    display: block;
+}
+
+/*
+   * Add the correct display in all browsers.
+   */
+summary {
+    display: list-item;
+}
+
+/* Misc
+     ========================================================================== */
+/**
+   * Add the correct display in IE 10+.
+   */
+template {
+    display: none;
+}
+
+/**
+   * Add the correct display in IE 10.
+   */
+[hidden] {
+    display: none;
+}
+
+@font-face {
+    font-family: 'Montserrat Alternates';
+    src: url("../fonts/MontserratAlternates-Regular.eot");
+    src: url("../fonts/MontserratAlternates-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/MontserratAlternates-Regular.woff2") format("woff2"), url("../fonts/MontserratAlternates-Regular.woff") format("woff"), url("../fonts/MontserratAlternates-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'UTM Copperplate';
+    src: url("../fonts/UTMCopperplate.eot");
+    src: url("../fonts/UTMCopperplate.eot?#iefix") format("embedded-opentype"), url("../fonts/UTMCopperplate.woff2") format("woff2"), url("../fonts/UTMCopperplate.woff") format("woff"), url("../fonts/UTMCopperplate.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    font-family: "Montserrat Alternates";
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #eaebdd;
+    color: #030303;
+}
+
+body {
+    font-family: "Montserrat Alternates";
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #eaebdd;
+    color: #030303;
+}
+
+.wrapper {
+    max-width: 1340px;
+    margin: auto;
+}
+
+@media screen and (min-width: 1500px) {
+    .wrapper {
+        max-width: 1340px;
+    }
+}
+
+/* */
+.m-backtotop {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    position: fixed;
+    bottom: -50px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    text-align: center;
+    opacity: 0;
+    overflow: hidden;
+    color: #fff;
+    z-index: 1;
+}
+
+    .m-backtotop.active {
+        bottom: 15px;
+        opacity: .5;
+        z-index: 100;
+    }
+
+    .m-backtotop div {
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+        .m-backtotop div.arrow {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translateY(-50%) translateX(-50%);
+            transform: translateY(-50%) translateX(-50%);
+            opacity: 1;
+        }
+
+        .m-backtotop div.text {
+            font-size: 5px;
+            font-size: 0.5rem;
+            line-height: 10px;
+            text-transform: uppercase;
+            font-weight: 900;
+            font-family: "Open Sans", sans-serif;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translateY(50%) translateX(-50%);
+            transform: translateY(50%) translateX(-50%);
+            opacity: 0;
+            margin-top: 1px;
+        }
+
+    .m-backtotop:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        bottom: 20px;
+        cursor: pointer;
+        background: black;
+    }
+
+        .m-backtotop:hover div.arrow {
+            -webkit-transform: translateY(-150%) translateX(-50%);
+            transform: translateY(-150%) translateX(-50%);
+            opacity: 0;
+        }
+
+        .m-backtotop:hover div.text {
+            -webkit-transform: translateY(-50%) translateX(-50%);
+            transform: translateY(-50%) translateX(-50%);
+            opacity: 1;
+        }
+
+/*-variable*/
+.btn-default {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    position: relative;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    padding: 12px 18px;
+    background: #a3411e;
+    background: linear-gradient(45deg, #a3411e 0%, #bc3809 45%, #e23d03 100%);
+    font: 14px "Montserrat Alternates";
+    line-height: 1;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 12px;
+    cursor: pointer;
+    border: 1px solid #215107;
+    color: #fff;
+    min-width: 150px;
+    height: 35px;
+    position: relative;
+    letter-spacing: .1em;
+    white-space: nowrap;
+    border-radius: 2px;
+    z-index: 2;
+    overflow: hidden;
+}
+
+@media only screen and (min-width: 998px) {
+    .btn-default {
+        width: 185px;
+        height: 45px;
+    }
+}
+
+.btn-default i, .btn-default svg {
+    margin-left: 10px;
+    margin-top: 1px;
+}
+
+.btn-default:after {
+    background: #fff;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    left: -35%;
+    top: 0;
+    transform: skew(50deg);
+    -webkit-transform: skew(50deg);
+    -moz-transform: skew(50deg);
+    -ms-transform: skew(50deg);
+    -o-transform: skew(50deg);
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    width: 0;
+}
+
+.btn-default:hover {
+    text-decoration: none;
+    color: #215107;
+    box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.35);
+    -webkit-box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.35);
+}
+
+    .btn-default:hover:after {
+        width: 135%;
+        height: 100%;
+    }
+
+.m-backtotop {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    position: fixed;
+    bottom: -50px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    text-align: center;
+    opacity: 0;
+    overflow: hidden;
+    color: #fff;
+    z-index: 1;
+}
+
+    .m-backtotop.active {
+        bottom: 15px;
+        opacity: .5;
+    }
+
+    .m-backtotop div {
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+        .m-backtotop div.arrow {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translateY(-50%) translateX(-50%);
+            transform: translateY(-50%) translateX(-50%);
+            opacity: 1;
+        }
+
+        .m-backtotop div.text {
+            font-size: 5px;
+            font-size: 0.5rem;
+            line-height: 10px;
+            text-transform: uppercase;
+            font-weight: 900;
+            font-family: "Open Sans", sans-serif;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translateY(50%) translateX(-50%);
+            transform: translateY(50%) translateX(-50%);
+            opacity: 0;
+            margin-top: 1px;
+        }
+
+    .m-backtotop:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        bottom: 20px;
+        cursor: pointer;
+        background: black;
+    }
+
+        .m-backtotop:hover div.arrow {
+            -webkit-transform: translateY(-150%) translateX(-50%);
+            transform: translateY(-150%) translateX(-50%);
+            opacity: 0;
+        }
+
+        .m-backtotop:hover div.text {
+            -webkit-transform: translateY(-50%) translateX(-50%);
+            transform: translateY(-50%) translateX(-50%);
+            opacity: 1;
+        }
+
+.form-control {
+    border-radius: 2px;
+    font-size: 14px;
+}
+
+    .form-control:focus {
+        outline: none;
+        border-color: #000;
+        box-shadow: 0 12px 20px -12px rgba(0, 0, 0, 0.35);
+        -webkit-box-shadow: 0 12px 20px -12px rgba(0, 0, 0, 0.35);
+        -moz-box-shadow: 0 12px 20px -12px rgba(0, 0, 0, 0.35);
+    }
+
+.error {
+    font-size: 12px;
+    font-weight: 300;
+    font-style: italic;
+    color: #FF9494;
+}
+
+.first-line {
+    height: 8px;
+    background-color: #215107;
+}
+
+a {
+    color: #215107;
+}
+
+    a:hover, a:active {
+        color: #215107;
+        text-decoration: none;
+    }
+
+.title {
+    font-family: "UTM Copperplate";
+    color: #276009;
+}
+
+.trans-op-75 {
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    opacity: .75;
+}
+
+    .trans-op-75:hover {
+        opacity: 1;
+    }
+
+.see-more, .btn-see-more {
+    position: relative;
+    padding: 8px 15px 6px 15px;
+    border: 1px solid #215107;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    background-color: #215107;
+    display: inline-block;
+    margin: 1rem auto 0;
+    overflow: hidden;
+}
+
+    .see-more:hover, .btn-see-more:hover {
+        background-color: #fff;
+    }
+
+        .see-more:hover a.see-more-link, .btn-see-more:hover a.see-more-link {
+            color: #215107;
+        }
+
+            .see-more:hover a.see-more-link:after, .btn-see-more:hover a.see-more-link:after {
+                color: #215107;
+            }
+
+    .see-more:after, .btn-see-more:after {
+        content: "";
+        width: 80px;
+        height: 80px;
+        background-color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        -webkit-transform: translate(50%, 0);
+        transform: translate(50%, 0);
+    }
+
+    .see-more a.see-more-link, .btn-see-more a.see-more-link {
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+        .see-more a.see-more-link:after, .btn-see-more a.see-more-link:after {
+            z-index: 10;
+            position: relative;
+            font-size: 1.25rem;
+            content: "\f0da";
+            color: #215107;
+            font-family: 'Font Awesome 5 Pro';
+            font-weight: 900;
+            padding-left: 15px;
+        }
+
+.banner {
+    z-index: 1;
+    position: relative;
+}
+
+.breadcrumb-ds {
+    margin-top: -100px;
+    padding-top: 140px;
+    padding-bottom: 20px;
+    position: relative;
+    background: white;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(11%, #eaebdd), color-stop(50%, #e9f7e3), to(#e9f7e3));
+    background: linear-gradient(0deg, #eaebdd 11%, #e9f7e3 50%, #e9f7e3 100%);
+}
+
+    .breadcrumb-ds:before {
+        content: '';
+        background: url("../images/Greenry/about-top.png");
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        z-index: 9;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+    }
+
+header {
+    position: relative;
+    height: 112px;
+    background: white;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(11%, white), color-stop(72%, #dcead4));
+    background: linear-gradient(180deg, white 11%, #dcead4 72%);
+}
+
+    header .wrapper {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+        header .wrapper .h-top-left, header .wrapper .h-top-right {
+            position: absolute;
+            top: 50%;
+            width: 40%;
+            -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+        }
+
+            header .wrapper .h-top-left .title .h3, header .wrapper .h-top-right .title .h3 {
+                font-size: 1rem;
+                color: #181818;
+            }
+
+        header .wrapper .h-top-left {
+            left: 0;
+        }
+
+            header .wrapper .h-top-left .title {
+                text-align: right;
+                padding: 0 20px 14px 0;
+                position: relative;
+            }
+
+                header .wrapper .h-top-left .title:after {
+                    content: " ";
+                    width: 100%;
+                    height: 1px;
+                    background: white;
+                    background: -webkit-gradient(linear, left top, right top, color-stop(13%, rgba(255, 255, 255, 0)), color-stop(80%, #666666));
+                    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 13%, #666666 80%);
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                }
+
+        header .wrapper .h-top-right {
+            right: 0;
+        }
+
+            header .wrapper .h-top-right .title {
+                text-align: left;
+                padding: 0 0 14px 20px;
+                position: relative;
+            }
+
+                header .wrapper .h-top-right .title:after {
+                    content: " ";
+                    width: 100%;
+                    height: 1px;
+                    background: white;
+                    background: -webkit-gradient(linear, left top, right top, color-stop(13%, #666666), color-stop(80%, rgba(255, 255, 255, 0)));
+                    background: linear-gradient(90deg, #666666 13%, rgba(255, 255, 255, 0) 80%);
+                    position: absolute;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                }
+
+                header .wrapper .h-top-right .title .h2 {
+                    padding-left: 5px;
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                }
+
+        header .wrapper .logo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+.menu {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+    .menu .menu-left, .menu .menu-right {
+        position: absolute;
+        bottom: 0;
+        width: 40%;
+    }
+
+        .menu .menu-left ul.menu-s, .menu .menu-right ul.menu-s {
+            padding: 0;
+            font-size: 0;
+            list-style-type: none;
+            display: block;
+            text-align: right;
+            margin: 0 auto;
+            margin-bottom: 0;
+        }
+
+            .menu .menu-left ul.menu-s li.m1, .menu .menu-right ul.menu-s li.m1 {
+                display: inline-block;
+                padding: 0 2rem;
+            }
+
+                .menu .menu-left ul.menu-s li.m1 a, .menu .menu-right ul.menu-s li.m1 a {
+                    position: relative;
+                    display: inline-block;
+                    padding: 10px 5px 1rem;
+                    font-family: "UTM Copperplate";
+                    color: #0d0d0d;
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                    -webkit-transition: all 0.4s ease-in-out;
+                    transition: all 0.4s ease-in-out;
+                }
+
+                    .menu .menu-left ul.menu-s li.m1 a:after, .menu .menu-right ul.menu-s li.m1 a:after {
+                        content: "";
+                        width: 0;
+                        height: 4px;
+                        background-color: #276009;
+                        position: absolute;
+                        left: 50%;
+                        bottom: 0;
+                        -webkit-transition: all 0.4s ease-in-out;
+                        transition: all 0.4s ease-in-out;
+                    }
+
+                    .menu .menu-left ul.menu-s li.m1 a:hover, .menu .menu-left ul.menu-s li.m1 a:active, .menu .menu-right ul.menu-s li.m1 a:hover, .menu .menu-right ul.menu-s li.m1 a:active {
+                        text-decoration: none;
+                        color: #276009;
+                    }
+
+                        .menu .menu-left ul.menu-s li.m1 a:hover:after, .menu .menu-left ul.menu-s li.m1 a:active:after, .menu .menu-right ul.menu-s li.m1 a:hover:after, .menu .menu-right ul.menu-s li.m1 a:active:after {
+                            width: 100%;
+                            left: 0;
+                        }
+
+    .menu .menu-right {
+        right: 0;
+    }
+
+        .menu .menu-right ul.menu-s {
+            text-align: left;
+        }
+
+footer {
+    margin-bottom: 2rem;
+}
+
+    footer .f-top {
+        background-color: #5c821a;
+        padding: 2rem;
+        color: #f6fdf6;
+    }
+
+        footer .f-top h3 {
+            font-size: 14px;
+        }
+
+    footer .f-bot {
+        padding: 2rem;
+        background-color: #215107;
+        color: #aac67a;
+        font-size: 14px;
+    }
+
+        footer .f-bot p {
+            margin-bottom: 0;
+        }
+
+        footer .f-bot a {
+            color: #aac67a;
+        }
+
+            footer .f-bot a:hover {
+                text-decoration: underline;
+            }
+
+        footer .f-bot h3 {
+            font-size: 1.25rem;
+        }
+
+    footer .logo-f {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        position: relative;
+        display: inline-block;
+    }
+
+        footer .logo-f:after {
+            content: " ";
+            position: absolute;
+            width: 80%;
+            height: 1px;
+            background-color: #f6fdf6;
+            bottom: 0;
+            left: 50%;
+            -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+        }
+
+    footer ul.list-follow {
+        display: block;
+        padding: 0;
+    }
+
+        footer ul.list-follow li {
+            display: inline-block;
+        }
+
+            footer ul.list-follow li:not(:last-child) {
+                padding-right: 10px;
+            }
+
+            footer ul.list-follow li i, footer ul.list-follow li svg {
+                font-size: 2rem;
+                color: #f6fdf6;
+            }
+
+.about-us {
+    margin-top: -100px;
+    padding-top: 140px;
+    padding-bottom: 20px;
+    margin-bottom: 100px;
+    position: relative;
+    background: white;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(11%, white), color-stop(50%, #e9f7e3), to(#e9f7e3));
+    background: linear-gradient(0deg, white 11%, #e9f7e3 50%, #e9f7e3 100%);
+}
+
+    .about-us:before {
+        content: '';
+        background: url("../images/Greenry/about-top.png");
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        z-index: 9;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+    }
+
+    .about-us:after {
+        content: '';
+        background: url("../images/Greenry/about-bot.png");
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        z-index: 9;
+        bottom: -114px;
+        left: 0;
+        width: 100%;
+        height: 114px;
+    }
+
+    .about-us .title {
+        text-transform: uppercase;
+        font-family: "UTM Copperplate";
+        color: #215107;
+        font-size: 2rem;
+    }
+
+.group-product-title {
+    font-family: "UTM Copperplate";
+    color: #276009;
+    font-weight: bold;
+}
+
+.products {
+    position: relative;
+    height: 100%;
+}
+
+    .products .bread:before {
+        content: url("../images/Greenry/line-section.png");
+        text-align: center;
+        margin: auto;
+        display: block;
+    }
+
+    .products .products-title {
+        margin-top: 0.5rem;
+        font-size: 2.5rem;
+    }
+
+    .products .product-body {
+        height: 790px;
+        width: 100%;
+    }
+
+    .products .product-item {
+        width: 100%;
+        overflow: hidden;
+        border: 1px solid #609b41;
+    }
+
+        .products .product-item:hover .product-content {
+            background-color: #609b41;
+            color: #fff;
+        }
+
+            .products .product-item:hover .product-content a {
+                color: #fff;
+            }
+
+                .products .product-item:hover .product-content a:hover {
+                    color: #fff;
+                }
+
+            .products .product-item:hover .product-content .link-contact a {
+                color: #fff;
+            }
+
+        .products .product-item .product-thumb {
+            position: relative;
+            overflow: hidden;
+            -webkit-transition: .4s ease;
+            transition: .4s ease;
+            font-size: 0px;
+        }
+
+            .products .product-item .product-thumb:before {
+                content: "";
+                display: block;
+                padding-top: 87.73%;
+            }
+
+            .products .product-item .product-thumb .thumbnail-content {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: #ccc;
+            }
+
+                .products .product-item .product-thumb .thumbnail-content img {
+                    width: 100%;
+                    height: auto;
+                }
+
+            .products .product-item .product-thumb:hover {
+                -webkit-transition: 0.4s ease-in-out;
+                transition: 0.4s ease-in-out;
+            }
+
+            .products .product-item .product-thumb .thumbnail-content {
+                z-index: 1;
+            }
+
+                .products .product-item .product-thumb .thumbnail-content img {
+                    width: 100%;
+                    height: 100%;
+                    -o-object-fit: cover;
+                    object-fit: cover;
+                }
+
+        .products .product-item .product-content {
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            z-index: 100;
+            position: relative;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        .products .product-item .product-content-title {
+            font-size: 1.25rem;
+        }
+
+        .products .product-item .product-content .link-contact {
+            margin-top: 1rem;
+            font-family: "Montserrat Alternates";
+        }
+
+            .products .product-item .product-content .link-contact a {
+                color: #fd0303;
+            }
+
+        .products .product-item .product-content .link {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #609b41;
+            position: absolute;
+            top: 0;
+            right: 0;
+            -webkit-transform: translate(40%, -50%);
+            transform: translate(40%, -50%);
+            color: #fff;
+            line-height: 40px;
+            padding-left: 15px;
+        }
+
+    .products .swiper {
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .products .swiper-slide {
+        font-size: 18px;
+        background: #fff;
+        height: calc((100% - 30px) / 2) !important;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+.news {
+    position: relative;
+    height: 100%;
+}
+
+    .news .bread:before {
+        content: url("../images/Greenry/line-section.png");
+        text-align: center;
+        margin: auto;
+        display: block;
+    }
+
+    .news .newss-title {
+        margin-top: 0.5rem;
+        font-size: 2.5rem;
+    }
+
+    .news .news-body {
+        width: 100%;
+    }
+
+    .news .news-item {
+        width: 100%;
+        overflow: hidden;
+        border-bottom: 4px solid #609b41;
+    }
+
+        .news .news-item hr {
+            background-color: #215107;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .news .news-item .news-thumb {
+            border: 1px solid #ccc;
+            position: relative;
+            overflow: hidden;
+            -webkit-transition: .4s ease;
+            transition: .4s ease;
+            font-size: 0px;
+        }
+
+            .news .news-item .news-thumb:before {
+                content: "";
+                display: block;
+                padding-top: 62.92%;
+            }
+
+            .news .news-item .news-thumb .thumbnail-content {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: #ccc;
+            }
+
+                .news .news-item .news-thumb .thumbnail-content img {
+                    width: 100%;
+                    height: auto;
+                }
+
+            .news .news-item .news-thumb:hover {
+                -webkit-transition: 0.4s ease-in-out;
+                transition: 0.4s ease-in-out;
+            }
+
+            .news .news-item .news-thumb .thumbnail-content {
+                z-index: 1;
+            }
+
+                .news .news-item .news-thumb .thumbnail-content:hover img {
+                    -webkit-transform: scale(1.1);
+                    transform: scale(1.1);
+                }
+
+                .news .news-item .news-thumb .thumbnail-content img {
+                    -webkit-transition: all .3s ease-in-out;
+                    transition: all .3s ease-in-out;
+                    width: 100%;
+                    height: 100%;
+                    -o-object-fit: cover;
+                    object-fit: cover;
+                }
+
+        .news .news-item .link {
+            z-index: 10;
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #609b41;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            -webkit-transform: translate(40%, 40%);
+            transform: translate(40%, 40%);
+            color: #fff;
+            line-height: 40px;
+            padding-left: 15px;
+        }
+
+            .news .news-item .link i, .news .news-item .link svg {
+                position: absolute;
+                left: 20px;
+                top: 13px;
+                font-size: 18px;
+                color: #fff;
+            }
+
+        .news .news-item .news-content {
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            z-index: 100;
+            position: relative;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        .news .news-item .news-content-title {
+            font-size: 1.25rem;
+            color: #030303;
+            font-weight: bold;
+        }
+
+            .news .news-item .news-content-title:hover {
+                color: #215107;
+            }
+
+        .news .news-item .news-content-detail {
+            text-align: justify;
+            font-size: 16px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            /* number of lines to show */
+            line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+
+    .news .swiper {
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .news .swiper-pagination {
+        bottom: 0;
+    }
+
+    .news .swiper-slide {
+        padding-bottom: 30px;
+        font-size: 18px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+main > section {
+    margin-bottom: 2.5rem;
+}
+
+h1.title {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: "UTM Copperplate";
+    color: #215107;
+}
+
+.text-page-desc {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    /* number of lines to show */
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.page-content, .page-product, .page-list, .page-contact {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.page-see-title {
+    position: relative;
+    font-family: "UTM Copperplate";
+    color: #215107;
+}
+
+    .page-see-title h3 {
+        font-size: 1.25rem;
+    }
+
+    .page-see-title:before {
+        content: url("../images/Greenry/line-section-right.png");
+        text-align: left;
+        margin: auto;
+        display: block;
+    }
+
+.page-content .sw-product-group {
+    padding-bottom: 3rem;
+}
+
+    .page-content .sw-product-group .swiper-pagination {
+        top: 0;
+        bottom: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .page-content .sw-product-group .swiper-wrapper {
+        padding-top: 60px;
+    }
+
+    .page-content .sw-product-group .item-pagi {
+        display: inline-block;
+        width: auto;
+        height: auto;
+        padding: 5px 1.5rem;
+        border-radius: 1.25rem;
+        background-color: transparent;
+        opacity: 1;
+    }
+
+        .page-content .sw-product-group .item-pagi.swiper-pagination-bullet-active, .page-content .sw-product-group .item-pagi:hover {
+            background-color: #609b41;
+        }
+
+            .page-content .sw-product-group .item-pagi.swiper-pagination-bullet-active span, .page-content .sw-product-group .item-pagi:hover span {
+                color: #fff;
+            }
+
+        .page-content .sw-product-group .item-pagi span {
+            font-family: "UTM Copperplate";
+            color: #215107;
+            font-size: 1.25rem;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+.page-product {
+    padding-top: 10px;
+}
+
+    .page-product .page-product-head {
+        padding-top: 10px;
+    }
+
+        .page-product .page-product-head .title {
+            font-family: "Montserrat Alternates";
+            padding-bottom: 1.5rem;
+            position: relative;
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+            .page-product .page-product-head .title:after {
+                content: " ";
+                position: absolute;
+                width: 100%;
+                height: 1px;
+                background-color: #ccc;
+                bottom: 0;
+                left: 0;
+            }
+
+    .page-product .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .page-product .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+        .page-product .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+        }
+
+    .page-product .swiper {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .page-product .swiper-slide {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .page-product .mySwiper2 {
+        height: 80%;
+        width: 100%;
+    }
+
+    .page-product .mySwiper {
+        height: 20%;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 10px 0;
+    }
+
+        .page-product .mySwiper .swiper-slide {
+            width: 25%;
+            height: 100%;
+            opacity: 0.4;
+        }
+
+        .page-product .mySwiper .swiper-slide-thumb-active {
+            opacity: 1;
+        }
+
+    .page-product .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+
+.page-contact-map {
+    height: 400px;
+}
+
+.page-contact-map-title {
+    display: inline-block;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.page-contact-map iframe {
+    border-top: 10px solid #b0c58d !important;
+}
+/*# sourceMappingURL=site.css.map */

@@ -1,0 +1,97 @@
+.download{
+    position: relative;
+    padding-top: 4.5rem;
+    min-height: 350px;
+    &:after { 
+        content: '';
+        position: absolute;
+        left: 0;
+        top: -150px;
+        z-index: -1;
+        width: 100%;
+        height: calc(100% + 150px);
+        background: url('../../../images/CaringLife/bg-bot.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    // &:before {
+    //     content: "";
+    //     position: absolute;
+    //     top: 0;
+    //     left: 50%;
+    //     transform: translateX(-50%);
+    //     width: 40%;
+    //     height: 1px;
+    //     background: rgb(255,255,255);
+    //     background: linear-gradient(90deg, rgba(255,255,255,0.4962359943977591) 0%, rgba(204,204,204,1) 40%, rgba(204,204,204,1) 60%, rgba(255,255,255,1) 100%);    
+    // }
+    .head{
+        width: 100%;
+        .title{
+            font-family: $font-title;
+            position: relative;
+            padding-bottom: 1.25rem;
+            margin-bottom: 1.25rem;
+            &:after {
+                content: '';
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                transform: translateX(-50%);
+                width: 100px;
+                height: 6px;
+                background-color: $color-primary;
+                border-radius: 3px;
+            }
+        }
+        .sub{
+            width: 50%;
+            color: #5e5e5f;
+        }
+    }
+    .download-body{
+        margin-top: 2rem;
+        .btn-download{
+            display: inline-block;
+            padding: 10px 2rem 10px 1rem;
+            border-radius: 50px;
+            border: 2px solid $color-primary;
+            padding-left: 70px;
+            position: relative;
+            h3{
+                line-height: 1;
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                left: 1rem;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 40px;
+                height: 100%;
+            }
+            &.ios::before{
+                background: url('../../../images/CaringLife/i-ios.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
+            &.apk::before{
+                background: url('../../../images/CaringLife/i-apk.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .download{
+        .bread{
+            &:before, &:after{
+                display: none;
+            }
+        }
+    }
+}

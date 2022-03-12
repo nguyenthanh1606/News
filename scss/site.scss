@@ -1,0 +1,32 @@
+@import 'Base/_normalize.scss';
+@import 'Helpers/_variables.scss';
+@import 'Helpers/_fonts.scss';
+@import 'Base/_reset.scss';
+@import 'Helpers/_mixin2.scss';
+
+@import 'Components/_button.scss';
+@import 'Components/_input.scss';
+
+@import 'Components/compoments';
+@import 'Components/_breadcrumb.scss';
+@import 'Components/_pagination.scss';
+@import 'Components/_preloader.scss';
+@import 'Components/_button.scss';
+@import 'Components/_social.scss';
+
+@import 'Components/header/_header.scss';
+@import 'Components/header/_menu.scss';
+@import 'Components/footer/_footer.scss';
+
+@import 'Layout/_home.scss';
+@import 'Layout/_abouts.scss';
+// @import 'Layout/_page.scss';
+
+// @import 'Partial/_title.scss';
+// @import 'Partial/_block-box.scss';
+// @import 'Partial/_list-card.scss';
+// @import 'Partial/_tiles-card.scss';
+// @import 'Partial/_related.scss';
+// @import 'Partial/_libary.scss';
+
+// @import 'Layout/_contact.scss';

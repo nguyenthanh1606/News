@@ -1,0 +1,79 @@
+.products{
+    position: relative;
+    padding-top: 2.5rem;
+    &:not(.child):before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 40%;
+        height: 1px;
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,0.4962359943977591) 0%, rgba(204,204,204,1) 40%, rgba(204,204,204,1) 60%, rgba(255,255,255,1) 100%);    
+    }
+    .head{
+        width: 100%;
+        .title{
+            font-size: 3.5rem;
+            font-family: $font-title;
+            position: relative;
+            &:after {
+                content: url('../../../images/CaringLife/bg1.png');
+                position: absolute;
+                right: -27px;
+                top: -27px;
+            }
+        }
+        .sub{
+            width: 50%;
+            color: #5e5e5f;
+        }
+    }
+    .product-body{
+        .product-list{
+            padding-bottom: 3rem;
+            .sw-p1{
+                bottom: 0;
+                .swiper-pagination-bullet{
+                    width: 50px;
+                    height: 4px;
+                    border-radius: 0;
+                }
+            }
+        }
+        .thumb{
+            position: relative;
+            padding: 20px 20px 0 20px;
+            &:after{
+                content: '';
+                width: 90%;
+                height: 90%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                background-image: url('../../../images/CaringLife/bg2.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                z-index: -1;
+            }
+        }
+        .product-item{
+            .title{
+                margin: 1rem auto;
+                font-size: 1.3rem;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .products{
+        .bread{
+            &:before, &:after{
+                display: none;
+            }
+        }
+    }
+}

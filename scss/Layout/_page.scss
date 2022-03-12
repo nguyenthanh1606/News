@@ -1,0 +1,212 @@
+h1.title{
+    font-size: 3rem;
+    font-family: $font-menu;
+    color: $color-primary;
+    font-style: italic;
+    font-weight: 300;
+}
+.text-page-desc{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* number of lines to show */
+            line-clamp: 2; 
+    -webkit-box-orient: vertical;
+}
+.page-content, .page-product, .page-list, .page-contact{
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+.page-see{
+    &-title{
+        position: relative;
+        font-family: $font-menu;
+        color: $color-primary;
+        h3{
+            font-size: 1.25rem;
+        }
+        &:before{
+            content: url('../../../images/Greenry/right-bf.png');
+            text-align: left;
+            margin: auto;
+            display: block;
+        }
+    }
+}
+.page-content{
+    &-sub{
+        border-top: 6px solid #dae0c1;
+        border-bottom: 1px solid #dae0c1;
+        padding: 1.5rem 0 0.5rem;
+        margin-bottom: 1rem;
+        color: #9a9e7d;
+    }
+    .sw-product-group{
+        padding-bottom: 3rem;
+        .swiper-pagination{
+            top: 0;
+            bottom: auto;
+            display: flex;
+            justify-content: center;
+        }
+        .swiper-wrapper{
+            padding-top: 60px;
+        }
+        .item-pagi{
+            display: inline-block;
+            width: auto;
+            height: auto;
+            padding: 5px 1.5rem;
+            border-radius: 1.25rem;
+            background-color: transparent;
+            opacity: 1;
+            &.swiper-pagination-bullet-active,&:hover{
+                background-color: $color-3;
+                span{
+                    color: #fff;
+                }
+            }
+            span{
+                font-family: $font-menu;
+                color: $color-primary;
+                font-size: 1.25rem;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+        }
+    }    
+}
+.page-product{
+    padding-top: 10px;
+
+    .page-product-head{
+        padding-top: 10px;
+        .title{
+            font-family: $font-default;
+            padding-bottom: 1.5rem;
+            position: relative;
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            &:after {
+                content: " ";
+                position: absolute;
+                width: 100%;
+                height: 1px;
+                background-color: #ccc;
+                bottom: 0;
+                left: 0;
+            }
+        }        
+    }
+    .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .swiper {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .swiper-slide {
+        background-size: cover;
+        background-position: center;
+      }
+
+      .mySwiper2 {
+        height: 80%;
+        width: 100%;        
+      }
+
+      .mySwiper {
+        height: 20%;
+        box-sizing: border-box;
+        padding: 10px 0;
+      }
+
+      .mySwiper .swiper-slide {
+        width: 25%;
+        height: 100%;
+        opacity: 0.4;
+      }
+
+      .mySwiper .swiper-slide-thumb-active {
+        opacity: 1;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+}
+.page-contact{
+    &-map{
+        &-title{
+            display: inline-block;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #ccc;
+        }
+        height:400px;
+        iframe{
+            border-top: 10px solid #b0c58d !important;
+        }
+    }
+    &-info{
+        > div{
+            max-width: 80%;
+        }
+        &--head{padding-top: 2rem;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #ccc;
+            img{
+                margin-bottom: 1.5rem;
+            }
+        }
+        &--body{
+            margin: 0;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #ccc;
+            .iconc{
+                display: inline-block;
+                width: 30px !important;
+                color: $color-primary;
+                text-align: left;
+            }
+            .no-wrap{
+                flex-wrap: nowrap;
+            }
+        }
+    }
+}
