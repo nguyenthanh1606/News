@@ -10,21 +10,211 @@
     <link rel="stylesheet" href="../css/all.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../css/jquery.mmenu.all.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="../css/site.css">
+    <style type="text/css">
+        .type-one .s-detail--first {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 15px 15px;
+            grid-template-areas:
+                "head head child-1 child-2"
+                "head head child-1 child-2"
+        }
+
+        .type-one .s-detail--first .s-detail--first_head {
+            grid-area: head;
+        }
+
+        .type-one .s-detail--first .s-detail--first_child-1 {
+            grid-area: child-1;
+        }
+
+        .type-one .s-detail--first .s-detail--first_child-2 {
+            grid-area: child-2;
+        }
+        .type-one .s-detail--second {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .type-two .s-detail--second {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+        .type-three .s-detail--first {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 15px 15px;
+            grid-template-areas:
+                "head head child-1 child-1"
+                "head head child-2 child-2"
+        }
+
+        .type-three .s-detail--first .s-detail--first_head {
+            grid-area: head;
+        }
+
+        .type-three .s-detail--first .s-detail--first_child-1 {
+            grid-area: child-1;
+        }
+
+        .type-three .s-detail--first .s-detail--first_child-2 {
+            grid-area: child-2;
+        }
+        .type-three .s-detail--second {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+    </style>
 </head>
 
 <body>
-
+    <header class="wrapper header">
+        <div class="logo">
+            <a href="#!"><img src="../images/logo-1.png" alt="Sài Gòn Insign"></a>
+            <a href="#!"><img src="../images/logo-1.png" alt="Sài Gòn Insign"></a>
+        </div>
+        <div class="menu-top">
+            <ul class="menu">
+                <li class="menu-item"><a href="#!">Vùng đất</a></li>
+                <li class="menu-item"><a href="#!">Địa điểm</a></li>
+                <li class="menu-item"><a href="#!">Lịch sử</a></li>
+                <li class="menu-item"><a href="#!">Văn hóa</a></li>
+                <li class="menu-item"><a href="#!">Con người</a></li>
+            </ul>
+        </div>
+        <div class="search"></div>
+        <div class="login"></div>
+    </header>
+    <div class="banner">
+        <div class="swiper banner-home-swipper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
+            </div>
+        </div>
+    </div>
+    <section class="type-one wrapper">
+        <div class="s-head">
+            <h1 class="title">N</h1>
+            <span class="desc-group"></span>
+        </div>
+        <div class="s-detail">
+            <div class="sub-group">
+                <ul>
+                    <li><a href="#!"></a></li>
+                    <li><a href="#!"></a></li>
+                    <li><a href="#!"></a></li>
+                    <li><a href="#!"></a></li>
+                    <li><a href="#!"></a></li>
+                </ul>
+            </div>
+            <div class="s-detail--first" style="height: 500px">
+                <div class="s-detail--first_head">a</div>
+                <div class="s-detail--first_child-1">b</div>
+                <div class="s-detail--first_child-2">c</div>
+            </div>
+            <div class="s-detail--second" style="height: 700px">
+                <div class="s-detail--second_item">1</div>
+                <div class="s-detail--second_item">2</div>
+                <div class="s-detail--second_item">3</div>
+                <div class="s-detail--second_item">4</div>
+                <div class="s-detail--second_item">5</div>
+                <div class="s-detail--second_item">6</div>
+            </div>
+        </div>
+    </section>
+    <section class="type-two">
+        <div class="s-head wrapper">
+            <h1 class="title">N</h1>
+            <span class="desc-group">HH</span>
+        </div>
+        <div class="s-detail">
+            <div class="s-detail--first">
+                <div class="swiper type-tow-swiper" style="height: 400px">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">Slide 1</div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-slide">Slide 4</div>
+                        <div class="swiper-slide">Slide 5</div>
+                        <div class="swiper-slide">Slide 6</div>
+                        <div class="swiper-slide">Slide 7</div>
+                        <div class="swiper-slide">Slide 8</div>
+                        <div class="swiper-slide">Slide 9</div>
+                    </div>
+                </div>
+            </div>
+            <div class="s-detail--second wrapper" style="height: 700px">
+                <div class="s-detail--second_item">1</div>
+                <div class="s-detail--second_item">1</div>
+                <div class="s-detail--second_item">1</div>
+                <div class="s-detail--second_item">1</div>
+                <div class="s-detail--second_item">1</div>
+                <div class="s-detail--second_item">1</div>
+                <div class="s-detail--second_item">1</div>
+                <div class="s-detail--second_item">1</div>
+                <div class="s-detail--second_item">1</div>
+                <div class="s-detail--second_item">1</div>
+                <div class="s-detail--second_item">1</div>
+                <div class="s-detail--second_item">1</div>
+            </div>
+        </div>
+    </section>
+    <section class="type-three dark-theme">
+        <div class="s-head wrapper">
+            <h1 class="title">N</h1>
+            <span class="desc-group">HH</span>
+        </div>
+        <div class="s-detail">
+            <div class="s-detail--first wrapper" style="height: 500px">
+                <div class="s-detail--first_head">a</div>
+                <div class="s-detail--first_child-1">b</div>
+                <div class="s-detail--first_child-2">c</div>
+            </div>
+            <div class="s-detail--second wrapper" style="height: 300px">
+                <div class="s-detail--second_item">1</div>
+                <div class="s-detail--second_item">1</div>
+                <div class="s-detail--second_item">1</div>
+                <div class="s-detail--second_item">1</div>
+            </div>
+        </div>
+    </section>
+    <section class="agency">
+        <div class="s-head wrapper">
+            <h1 class="title">N</h1>
+            <span class="desc-group">HH</span>
+        </div>
+        <div class="s-detail">
+            <div class="s-detail-nav"></div>
+            <div class="s-detail-list">
+                <div class="s-detail--item">
+                    <img src="../images/agency.png" alt="">
+                    <h4 class="text-bold">Sơn nam</h4>
+                    <span class="text-uppercase">Nhà nghiên cứu</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                
+            </div>
+            <div class="col-md-8"></div>
+        </div>
+    </footer>
     <!-------- SCRIPT -------->
     <script src="../scripts/jquery.min.js"></script>
     <script src="../scripts/bootstrap.min.js"></script>
@@ -32,6 +222,10 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="../scripts/jquery.mmenu.all.js"></script>
     <script src="../scripts/main.js"></script>
+    <script>
+        var swiper = new Swiper(".banner-home-swipper", {});
+        var swiper = new Swiper(".type-tow-swiper", {});
+    </script>
 </body>
 
 </html>
