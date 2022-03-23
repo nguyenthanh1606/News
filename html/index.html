@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="../css/all.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../css/jquery.mmenu.all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/site.css">
     <style type="text/css">
         .type-one .s-detail--first {
@@ -33,16 +36,19 @@
         .type-one .s-detail--first .s-detail--first_child-2 {
             grid-area: child-2;
         }
+
         .type-one .s-detail--second {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 10px;
         }
+
         .type-two .s-detail--second {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 10px;
         }
+
         .type-three .s-detail--first {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -64,6 +70,7 @@
         .type-three .s-detail--first .s-detail--first_child-2 {
             grid-area: child-2;
         }
+
         .type-three .s-detail--second {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -73,51 +80,99 @@
 </head>
 
 <body>
-    <header class="wrapper header">
-        <div class="logo">
-            <a href="#!"><img src="../images/logo-1.png" alt="Sài Gòn Insign"></a>
-            <a href="#!"><img src="../images/logo-1.png" alt="Sài Gòn Insign"></a>
+    <header>
+        <div class="wrapper header">
+            <div class="logo">
+                <a href="#!"><img src="../images/logo.png" alt="Sài Gòn Insign" class="img-fluid"></a>
+            </div>
+            <div class="menu-top">
+                <ul class="menu">
+                    <li class="menu-item"><a href="#!">Vùng đất</a></li>
+                    <li class="menu-item"><a href="#!">Địa điểm</a></li>
+                    <li class="menu-item"><a href="#!">Lịch sử</a></li>
+                    <li class="menu-item"><a href="#!">Văn hóa</a></li>
+                    <li class="menu-item"><a href="#!">Con người</a></li>
+                </ul>
+            </div>
+            <div class="search-box">
+                <button class="btn-search">
+                    <ion-icon style="font-size: 1.25rem" name="search-outline"></ion-icon>
+                </button>
+                <input type="text" class="input-search" placeholder="Type to Search...">
+            </div>
+            <div class="login">
+                <a href="#!" class="btn-login">
+                    <ion-icon style="font-size: 1.25rem" name="menu-outline"></ion-icon>
+                    <ion-icon style="font-size: 2.5rem; color:#c8c9c9" name="person-circle-outline"></ion-icon>
+                </a>
+            </div>
         </div>
-        <div class="menu-top">
-            <ul class="menu">
-                <li class="menu-item"><a href="#!">Vùng đất</a></li>
-                <li class="menu-item"><a href="#!">Địa điểm</a></li>
-                <li class="menu-item"><a href="#!">Lịch sử</a></li>
-                <li class="menu-item"><a href="#!">Văn hóa</a></li>
-                <li class="menu-item"><a href="#!">Con người</a></li>
-            </ul>
-        </div>
-        <div class="search"></div>
-        <div class="login"></div>
     </header>
-    <div class="banner">
-        <div class="swiper banner-home-swipper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-                <div class="swiper-slide">Slide 4</div>
-                <div class="swiper-slide">Slide 5</div>
-                <div class="swiper-slide">Slide 6</div>
-                <div class="swiper-slide">Slide 7</div>
-                <div class="swiper-slide">Slide 8</div>
-                <div class="swiper-slide">Slide 9</div>
+    <div class="banner-home">
+        <div class="banner-top wrapper">
+            <div class="banner-top--left">
+                <div class="banner-nav">
+                    <h5 class="sub"><a href="#!">Vùng đất</a></h5>
+                </div>
+                <div class="banner-title">
+                    <h1>Kiến trúc Sài Gòn trong kiến trúc Đông Tây</h1>
+                </div>
+            </div>
+            <div class="banner-top--right">
+                <img src="../images/banner.png" class="img-fluid" alt="">
+            </div>
+        </div>
+        <div class="banner-ft wrapper">
+            <div class="banner-ft--left">
+                <div class="sup">
+                    <p>Nguyễn hữu thái <span>- 22 tháng 12/2022</span></p>
+                    <p>Nguồn: <a href="#!">Sài gòn xưa và nay</a> <span> (2003 - NXB Hồng Đức)</span></p>
+                </div>
+                <div class="list-group">
+                    <ul>
+                        <li><a href="#!">#kiến trúc đô thị</a></li>
+                        <li><a href="#!">#kiến trúc đô thị</a></li>
+                        <li><a href="#!">#kiến trúc đô thị</a></li>
+                        <li><a href="#!">#kiến trúc đô thị</a></li>
+                        <li><a href="#!">#kiến trúc đô thị</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="banner-ft--right">
+                <div class="desc">
+                    <h4>Không khó để nhận ra, kiến trúc Pháp cổ được thừa hưởng những giá trị tinh hoa nhất của kiến
+                        trúc cổ điển Hy Lạp - La Mã với vẻ đẹp lộng lẫy, hoành tráng, thể hiện được giá trị, đẳng cấp
+                        bậc nhất của chủ nhân</h4>
+                </div>
+                <div class="detail">
+                    <p>Praesent pretium tristique laoreet. Fusce blandit non mi ac luctus. Proin molestie semper lectus
+                        eget faucibus. Donec odio arcu, tempor id finibus id, vestibulum eu enim. Nam fermentum quam
+                        ante, a congue lorem rhoncus eu. Fusce convallis porta tempor. Nulla facilisi. Pellentesque
+                        commodo interdum diam sed maximus. Cras in nulla tincidunt justo semper sollicitudin rutrum
+                        pharetra mi. Quisque at ante consectetur, volutpat leo eu, consectetur est. Etiam posuere purus
+                        ac eros aliquam, sit amet porttitor tortor dignissim. Aenean venenatis ornare elit, vel viverra
+                        velit egestas vel. Mauris posuere facilisis sodales. Nullam mollis rhoncus sapien, et vestibulum
+                        est elementum vitae. Nullam mattis ultrices varius.</p>
+                </div>
+                <a href="#!">Đọc thêm</a>
             </div>
         </div>
     </div>
     <section class="type-one wrapper">
         <div class="s-head">
-            <h1 class="title">N</h1>
-            <span class="desc-group"></span>
+            <h1 class="title">Những chủ đề thú vị về Sài Gòn</h1>
+            <span class="desc-group">Pellentesque commodo interdum diam sed maximus. Cras in nulla tincidunt justo
+                semper sollicitudin rutrum pharetra mi. Quisque at ante consectetur, volutpat leo eu, consectetur
+                est.</span>
         </div>
         <div class="s-detail">
             <div class="sub-group">
                 <ul>
-                    <li><a href="#!"></a></li>
-                    <li><a href="#!"></a></li>
-                    <li><a href="#!"></a></li>
-                    <li><a href="#!"></a></li>
-                    <li><a href="#!"></a></li>
+                    <li><a href="#!">Phân chia hành chánh</a></li>
+                    <li><a href="#!">Phân chia hành chánh</a></li>
+                    <li><a href="#!">Phân chia hành chánh</a></li>
+                    <li><a href="#!">Phân chia hành chánh</a></li>
+                    <li><a href="#!">Phân chia hành chánh</a></li>
                 </ul>
             </div>
             <div class="s-detail--first" style="height: 500px">
@@ -210,7 +265,7 @@
     <footer class="container-fluid">
         <div class="row">
             <div class="col-md-4">
-                
+
             </div>
             <div class="col-md-8"></div>
         </div>
@@ -219,6 +274,8 @@
     <script src="../scripts/jquery.min.js"></script>
     <script src="../scripts/bootstrap.min.js"></script>
     <script src="../scripts/all.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="../scripts/jquery.mmenu.all.js"></script>
     <script src="../scripts/main.js"></script>
