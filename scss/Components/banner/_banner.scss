@@ -11,12 +11,17 @@
             align-self: end;
             .banner-nav{
                 font-size: 1rem;
-                font-weight: bold;
+                font-family: $font-title;
+                .sub{
+                    font-weight: bold;
+                }
             }
             .banner-title{
                 font-family: $font-banner, cursive;
                 h1{
                     font-size: 4rem;
+                    margin-top: 0.5em;
+                    color: #000;
                 }
             }
         }
@@ -36,15 +41,28 @@
         padding-top: 1.25rem;
         display: flex;
         flex-direction: row;
+        padding-bottom: 1.5rem;
+        border-bottom: 4px solid #ccc;
         &--left{
             flex: 0 0 40%;
             max-width: 40%;
             padding-right: 1rem;
+            .sup1{
+                color: $color-main;
+                font-weight: bold;
+                span{
+                    color: #b3b4b6;
+                }
+            }
         }
         &--right{
             flex: 0 0 60%;
             max-width: 60%;
             padding-left: 1rem;
+            .desc{
+                font-family: $font-title;
+                font-weight: 600;
+            }
             .detail{
                 position: relative;
                 height: 120px;
@@ -62,8 +80,8 @@
             }
         }
         .sup{
-            border-top: 4px solid #666;
-            border-bottom: 1px solid #333;
+            border-top: 4px solid #d0d3d6;
+            border-bottom: 1px solid #d5d5d5;
             padding-top: 0.75rem;
             padding-bottom: 0.5rem;
             p{
@@ -72,10 +90,12 @@
         }
         .list-group{
             margin-top: 1.5rem;
+            font-family: $font-title;
             ul{
                 padding-left: 0;
                 list-style-type: none;
                 li{
+                    line-height: 1.5;
                     a{
                         font-weight: bold;
                     }

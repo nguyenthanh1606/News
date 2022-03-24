@@ -10,39 +10,18 @@
     <link rel="stylesheet" href="../css/all.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../css/jquery.mmenu.all.css">
+    <!-- fonts local -->
+    <link rel="stylesheet" href="../css/font.css">
+    <!-- font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+    <!--  -->
     <link rel="stylesheet" href="../css/site.css">
     <style type="text/css">
-        .type-one .s-detail--first {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
-            gap: 15px 15px;
-            grid-template-areas:
-                "head head child-1 child-2"
-                "head head child-1 child-2"
-        }
-
-        .type-one .s-detail--first .s-detail--first_head {
-            grid-area: head;
-        }
-
-        .type-one .s-detail--first .s-detail--first_child-1 {
-            grid-area: child-1;
-        }
-
-        .type-one .s-detail--first .s-detail--first_child-2 {
-            grid-area: child-2;
-        }
-
-        .type-one .s-detail--second {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
-        }
-
         .type-two .s-detail--second {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -112,7 +91,7 @@
         <div class="banner-top wrapper">
             <div class="banner-top--left">
                 <div class="banner-nav">
-                    <h5 class="sub"><a href="#!">Vùng đất</a></h5>
+                    <a href="#!" class="sub">Vùng đất</a>
                 </div>
                 <div class="banner-title">
                     <h1>Kiến trúc Sài Gòn trong kiến trúc Đông Tây</h1>
@@ -125,8 +104,10 @@
         <div class="banner-ft wrapper">
             <div class="banner-ft--left">
                 <div class="sup">
-                    <p>Nguyễn hữu thái <span>- 22 tháng 12/2022</span></p>
-                    <p>Nguồn: <a href="#!">Sài gòn xưa và nay</a> <span> (2003 - NXB Hồng Đức)</span></p>
+                    <p class="text-uppercase font-title sup1">Nguyễn hữu thái <span>- 22 tháng 12/2022</span></p>
+                    <p><strong>Nguồn: <a href="#!" class="font-title">Sài gòn xưa và nay</a> </strong><span> (2003 - NXB
+                            Hồng Đức)</span>
+                    </p>
                 </div>
                 <div class="list-group">
                     <ul>
@@ -139,10 +120,14 @@
                 </div>
             </div>
             <div class="banner-ft--right">
-                <div class="desc">
-                    <h4>Không khó để nhận ra, kiến trúc Pháp cổ được thừa hưởng những giá trị tinh hoa nhất của kiến
+                <div class="mb-3">
+                    <a href="#!" class="h3 desc c-black">Không khó để nhận ra, kiến trúc Pháp cổ được thừa
+                        hưởng những giá trị
+                        tinh
+                        hoa nhất của
+                        kiến
                         trúc cổ điển Hy Lạp - La Mã với vẻ đẹp lộng lẫy, hoành tráng, thể hiện được giá trị, đẳng cấp
-                        bậc nhất của chủ nhân</h4>
+                        bậc nhất của chủ nhân</a>
                 </div>
                 <div class="detail">
                     <p>Praesent pretium tristique laoreet. Fusce blandit non mi ac luctus. Proin molestie semper lectus
@@ -154,39 +139,225 @@
                         velit egestas vel. Mauris posuere facilisis sodales. Nullam mollis rhoncus sapien, et vestibulum
                         est elementum vitae. Nullam mattis ultrices varius.</p>
                 </div>
-                <a href="#!">Đọc thêm</a>
+                <a href="#!" class="ef-1 p-2"><strong>Đọc thêm</strong></a>
             </div>
         </div>
     </div>
     <section class="type-one wrapper">
         <div class="s-head">
             <h1 class="title">Những chủ đề thú vị về Sài Gòn</h1>
-            <span class="desc-group">Pellentesque commodo interdum diam sed maximus. Cras in nulla tincidunt justo
-                semper sollicitudin rutrum pharetra mi. Quisque at ante consectetur, volutpat leo eu, consectetur
-                est.</span>
+            <span class="desc-group"><i>Pellentesque commodo interdum diam sed maximus. Cras in nulla tincidunt justo
+                    semper sollicitudin rutrum pharetra mi. Quisque at ante consectetur, volutpat leo eu, consectetur
+                    est.</i></span>
         </div>
         <div class="s-detail">
             <div class="sub-group">
                 <ul>
-                    <li><a href="#!">Phân chia hành chánh</a></li>
-                    <li><a href="#!">Phân chia hành chánh</a></li>
-                    <li><a href="#!">Phân chia hành chánh</a></li>
-                    <li><a href="#!">Phân chia hành chánh</a></li>
-                    <li><a href="#!">Phân chia hành chánh</a></li>
+                    <li><a class="c-black" href="#!">Phân chia hành chánh</a></li>
+                    <li><a class="c-black" href="#!">Cơ sở tôn giáo</a></li>
+                    <li><a class="c-black" href="#!">Người Sài Gòn</a></li>
+                    <li cl class="c-black active"><a href="#!">Sài Gòn trước 75</a></li>
+                    <li><a class="c-black" href="#!">Tôn giáo</a></li>
                 </ul>
             </div>
-            <div class="s-detail--first" style="height: 500px">
-                <div class="s-detail--first_head">a</div>
-                <div class="s-detail--first_child-1">b</div>
-                <div class="s-detail--first_child-2">c</div>
+            <div class="s-detail--first">
+                <div class="s-detail--first_head">
+                    <div class="thumb-lg">
+                        <div class="thumb-img">
+                            <img src="../images/news-lager-1.png" class="img-full-w" alt="">
+                        </div>
+                        <div class="thumb-content w-75">
+                            <span class="sub"><strong>Nghệ thuật</strong></span>
+                            <div class="title">
+                                <a href="#!" class="h3 title-content text-uppercase">DÒNG BOLERO SÀI GÒN trước 75</a>
+                            </div>
+                            <div class="desc">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
+                                    gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="s-detail--first_child-1">
+                    <div class="thumb-sm hover-ef-1">
+                        <div class="thumb-img">
+                            <a href="#!">
+                                <img src="../images/news-small-1.png" class="img-full-w" alt="">
+                            </a>
+                        </div>
+                        <div class="thumb-content">
+                            <span class="tag color-main">#Dòng bolero Sài Gòn trước 75</span>
+                            <div class="title">
+                                <a href="#!" class="h3 c-black">Nhớ Sài Gòn xưa với những dòng ký ức về Tân Định
+                                    trước
+                                    năm 1975</a>
+                            </div>
+                            <div class="summary">
+                                <span class="author d-block font-extraBold">Nguyễn Thanh Lợi</span>
+                                <span class="group d-block color-main font-bold text-uppercase">Sài gòn đất và
+                                    người</span>
+                            </div>
+                            <div class="desc">
+                                <p>Maecenas ac aliquam erat, sed aliquam dolor. Quisque rutrum lacus eget sem bibendum,
+                                    id semper elit mattis. Pellentesque elementum, sem vel cursus vehicula, ipsum massa
+                                    laoreet neque, eu suscipit lacus arcu vitae odio. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="s-detail--first_child-2">
+                    <div class="thumb-sm hover-ef-1">
+                        <div class="thumb-img">
+                            <a href="#!">
+                                <img src="../images/news-small-2.png" class="img-full-w" alt="">
+                            </a>
+                        </div>
+                        <div class="thumb-content">
+                            <span class="tag color-main">#Dòng bolero Sài Gòn trước 75</span>
+                            <div class="title">
+                                <a href="#!" class="h3 c-black">Nhớ Sài Gòn xưa với những dòng ký ức về Tân Định
+                                    trước
+                                    năm 1975</a>
+                            </div>
+                            <div class="summary">
+                                <span class="author d-block font-extraBold">Nguyễn Thanh Lợi</span>
+                                <span class="group d-block color-main font-bold text-uppercase">Sài gòn đất và
+                                    người</span>
+                            </div>
+                            <div class="desc">
+                                <p>Maecenas ac aliquam erat, sed aliquam dolor. Quisque rutrum lacus eget sem bibendum,
+                                    id semper elit mattis. Pellentesque elementum, sem vel cursus vehicula, ipsum massa
+                                    laoreet neque, eu suscipit lacus arcu vitae odio. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="s-detail--second" style="height: 700px">
-                <div class="s-detail--second_item">1</div>
-                <div class="s-detail--second_item">2</div>
-                <div class="s-detail--second_item">3</div>
-                <div class="s-detail--second_item">4</div>
-                <div class="s-detail--second_item">5</div>
-                <div class="s-detail--second_item">6</div>
+            <div class="s-detail--second">
+                <div class="s-detail--second_item">
+                    <div class="thumb-md hover-ef-1">
+                        <div class="thumb-img">
+                            <a href="#!">
+                                <img src="../images/news-medium-1.png" class="img-full-w" alt="">
+                            </a>
+                        </div>
+                        <div class="thumb-content">
+                            <span class="tag">Các dân tộc</span>
+                            <div class="title">
+                                <a href="#!" class="c-black">Người hoa ở Sài Gòn</a>
+                            </div>
+                            <div class="desc">
+                                <p>Maecenas ac aliquam erat, sed aliquam dolor. Quisque rutrum lacus eget sem bibendum,
+                                    id semper elit mattis. Pellentesque elementum, sem vel cursus vehicula, ipsum massa
+                                    laoreet neque, eu suscipit lacus arcu vitae odio. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="s-detail--second_item">
+                    <div class="thumb-md hover-ef-1">
+                        <div class="thumb-img">
+                            <a href="#!">
+                                <img src="../images/news-medium-1.png" class="img-full-w" alt="">
+                            </a>
+                        </div>
+                        <div class="thumb-content">
+                            <span class="tag">Các dân tộc</span>
+                            <div class="title">
+                                <a href="#!" class="c-black">Người hoa ở Sài Gòn</a>
+                            </div>
+                            <div class="desc">
+                                <p>Maecenas ac aliquam erat, sed aliquam dolor. Quisque rutrum lacus eget sem bibendum,
+                                    id semper elit mattis. Pellentesque elementum, sem vel cursus vehicula, ipsum massa
+                                    laoreet neque, eu suscipit lacus arcu vitae odio. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="s-detail--second_item">
+                    <div class="thumb-md hover-ef-1">
+                        <div class="thumb-img">
+                            <a href="#!">
+                                <img src="../images/news-medium-1.png" class="img-full-w" alt="">
+                            </a>
+                        </div>
+                        <div class="thumb-content">
+                            <span class="tag">Các dân tộc</span>
+                            <div class="title">
+                                <a href="#!" class="c-black">Người hoa ở Sài Gòn</a>
+                            </div>
+                            <div class="desc">
+                                <p>Maecenas ac aliquam erat, sed aliquam dolor. Quisque rutrum lacus eget sem bibendum,
+                                    id semper elit mattis. Pellentesque elementum, sem vel cursus vehicula, ipsum massa
+                                    laoreet neque, eu suscipit lacus arcu vitae odio. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="s-detail--second_item">
+                    <div class="thumb-md hover-ef-1">
+                        <div class="thumb-img">
+                            <a href="#!">
+                                <img src="../images/news-medium-1.png" class="img-full-w" alt="">
+                            </a>
+                        </div>
+                        <div class="thumb-content">
+                            <span class="tag">Các dân tộc</span>
+                            <div class="title">
+                                <a href="#!" class="c-black">Người hoa ở Sài Gòn</a>
+                            </div>
+                            <div class="desc">
+                                <p>Maecenas ac aliquam erat, sed aliquam dolor. Quisque rutrum lacus eget sem bibendum,
+                                    id semper elit mattis. Pellentesque elementum, sem vel cursus vehicula, ipsum massa
+                                    laoreet neque, eu suscipit lacus arcu vitae odio. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="s-detail--second_item">
+                    <div class="thumb-md hover-ef-1">
+                        <div class="thumb-img">
+                            <a href="#!">
+                                <img src="../images/news-medium-1.png" class="img-full-w" alt="">
+                            </a>
+                        </div>
+                        <div class="thumb-content">
+                            <span class="tag">Các dân tộc</span>
+                            <div class="title">
+                                <a href="#!" class="c-black">Người hoa ở Sài Gòn</a>
+                            </div>
+                            <div class="desc">
+                                <p>Maecenas ac aliquam erat, sed aliquam dolor. Quisque rutrum lacus eget sem bibendum,
+                                    id semper elit mattis. Pellentesque elementum, sem vel cursus vehicula, ipsum massa
+                                    laoreet neque, eu suscipit lacus arcu vitae odio. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="s-detail--second_item">
+                    <div class="thumb-md hover-ef-1">
+                        <div class="thumb-img">
+                            <a href="#!">
+                                <img src="../images/news-medium-1.png" class="img-full-w" alt="">
+                            </a>
+                        </div>
+                        <div class="thumb-content">
+                            <span class="tag">Các dân tộc</span>
+                            <div class="title">
+                                <a href="#!" class="c-black">Người hoa ở Sài Gòn</a>
+                            </div>
+                            <div class="desc">
+                                <p>Maecenas ac aliquam erat, sed aliquam dolor. Quisque rutrum lacus eget sem bibendum,
+                                    id semper elit mattis. Pellentesque elementum, sem vel cursus vehicula, ipsum massa
+                                    laoreet neque, eu suscipit lacus arcu vitae odio. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="see-more">
+                    <a href="#!" class="btn-see-more c-black">Xem các chủ đề khác</a>
+                </div>
             </div>
         </div>
     </section>
