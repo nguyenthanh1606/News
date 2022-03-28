@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'UTM Bebas';
+    src: url('../fonts/utm__bebas/.eot');
+    src: url('../fonts/utm__bebas/.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/utm__bebas/.woff2') format('woff2'),
+        url('../fonts/utm__bebas/.woff') format('woff'),
+        url('../fonts/utm__bebas/.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

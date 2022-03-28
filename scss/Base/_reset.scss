@@ -1,12 +1,12 @@
 :root{
-    font-family: $font-default;
+    font-family: $font-default, sans-serif;;
     font-size: 16px;
     line-height: 1.4;
     background-color: #fff;
     color: $color-text;
 }
 body{
-    font-family: $font-default;
+    font-family: $font-default, sans-serif;;
     font-size: 16px;
     line-height: 1.4;
     color: $color-text;
@@ -14,6 +14,53 @@ body{
 .wrapper{
     max-width: 1488px;
     margin: auto;
+}
+a{
+    color: $color-main;
+    &:hover{
+        text-decoration: none;
+    }
+    &.c-black{
+        color: #000;
+        &:hover{
+            color:$color-main;
+        }
+    }
+    &.c-white{
+        color: #000;
+    }
+}
+.ef-1{
+    position: relative;
+    &:before{
+        content: "";
+        width: 0;
+        height: 1px;
+        background-color: $color-main;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        transition: all 0.3s ease-in;
+    }
+    &:hover{
+        &:before{
+            content: '';
+            width: 100%;
+        }
+    }
+}
+.font-title{
+    font-family: $font-title;
+}
+.color-main{
+    color: $color-main;
+}
+.font-bold{
+    font-weight: 600;
+}
+.font-extraBold{
+    font-weight: 700;
 }
 @media screen and (min-width: 1500px){
     .wrapper{

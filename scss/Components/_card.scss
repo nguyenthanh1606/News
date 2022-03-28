@@ -1,0 +1,10 @@
+.img-full-w{
+    width: 100%;
+}
+.thumb-lg, .thumb-md, .thumb-sm{
+    position: relative;
+    .thumb-img{
+        border-radius: 1rem;
+        overflow: hidden;
+    }
+}
