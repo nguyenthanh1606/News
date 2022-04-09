@@ -1,38 +1,49 @@
-:root{
-    font-family: $font-default, sans-serif;;
+:root {
+    font-family: $font-default, sans-serif;
+    ;
     font-size: 16px;
     line-height: 1.4;
     background-color: #fff;
     color: $color-text;
 }
-body{
-    font-family: $font-default, sans-serif;;
+
+body {
+    font-family: $font-default, sans-serif;
+    ;
     font-size: 16px;
     line-height: 1.4;
     color: $color-text;
 }
-.wrapper{
+
+.wrapper {
     max-width: 1488px;
     margin: auto;
 }
-a{
+
+a {
     color: $color-main;
-    &:hover{
+
+    &:hover {
         text-decoration: none;
     }
-    &.c-black{
+
+    &.c-black {
         color: #000;
-        &:hover{
-            color:$color-main;
+
+        &:hover {
+            color: $color-main;
         }
     }
-    &.c-white{
+
+    &.c-white {
         color: #000;
     }
 }
-.ef-1{
+
+.ef-1 {
     position: relative;
-    &:before{
+
+    &:before {
         content: "";
         width: 0;
         height: 1px;
@@ -43,27 +54,27 @@ a{
         transform: translateX(-50%);
         transition: all 0.3s ease-in;
     }
-    &:hover{
-        &:before{
+
+    &:hover {
+        &:before {
             content: '';
             width: 100%;
         }
     }
 }
-.font-title{
+
+.font-title {
     font-family: $font-title;
 }
-.color-main{
+
+.color-main {
     color: $color-main;
 }
-.font-bold{
+
+.font-bold {
     font-weight: 600;
 }
-.font-extraBold{
+
+.font-extraBold {
     font-weight: 700;
-}
-@media screen and (min-width: 1500px){
-    .wrapper{
-        max-width: 1488px;
-    }
 }

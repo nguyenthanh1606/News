@@ -1,0 +1,21 @@
+@media screen and (max-width: 1500px) {
+    .wrapper {
+        max-width: 1488px;
+    }
+}
+
+@media screen and (max-width: 1370px) {
+    .wrapper {
+        max-width: 1200px;
+    }
+
+    .banner-home .banner-top .banner-top--left .banner-title h1 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .wrapper {
+        max-width: 1000px;
+    }
+}

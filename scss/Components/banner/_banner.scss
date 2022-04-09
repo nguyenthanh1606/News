@@ -1,73 +1,88 @@
-.banner-home{
+.banner-home {
     margin-top: 1rem;
     position: relative;
-    .banner-top{
+
+    .banner-top {
         display: flex;
         flex-direction: row;
         height: 590px;
-        .banner-top--left{
+
+        .banner-top--left {
             flex: 0 0 40%;
             max-width: 40%;
             align-self: end;
-            .banner-nav{
+
+            .banner-nav {
                 font-size: 1rem;
                 font-family: $font-title;
-                .sub{
+
+                .sub {
                     font-weight: bold;
                 }
             }
-            .banner-title{
+
+            .banner-title {
                 font-family: $font-banner, cursive;
-                h1{
+
+                h1 {
                     font-size: 4rem;
                     margin-top: 0.5em;
                     color: #000;
                 }
             }
         }
-        .banner-top--right{
+
+        .banner-top--right {
             flex: 0 0 60%;
             max-width: 60%;
             text-align: right;
             position: absolute;
             right: 0;
             top: 0;
-            img{
+
+            img {
                 height: 590px;
             }
         }
     }
-    .banner-ft{
-        padding-top: 1.25rem;
+
+    .banner-ft {
         display: flex;
         flex-direction: row;
         padding-bottom: 1.5rem;
         border-bottom: 4px solid #ccc;
-        &--left{
+
+        &--left {
             flex: 0 0 40%;
             max-width: 40%;
             padding-right: 1rem;
-            .sup1{
+
+            .sup1 {
                 color: $color-main;
                 font-weight: bold;
-                span{
+
+                span {
                     color: #b3b4b6;
                 }
             }
         }
-        &--right{
+
+        &--right {
             flex: 0 0 60%;
             max-width: 60%;
             padding-left: 1rem;
-            .desc{
+
+            .desc {
                 font-family: $font-title;
                 font-weight: 600;
             }
-            .detail{
+
+            .detail {
                 position: relative;
                 height: 120px;
                 overflow: hidden;
-                &::after{
+
+                &::after {
                     content: '';
                     width: 100%;
                     height: 60px;
@@ -79,24 +94,30 @@
                 }
             }
         }
-        .sup{
+
+        .sup {
             border-top: 4px solid #d0d3d6;
             border-bottom: 1px solid #d5d5d5;
             padding-top: 0.75rem;
             padding-bottom: 0.5rem;
-            p{
+
+            p {
                 margin-bottom: 0;
             }
         }
-        .list-group{
+
+        .list-group {
             margin-top: 1.5rem;
             font-family: $font-title;
-            ul{
+
+            ul {
                 padding-left: 0;
                 list-style-type: none;
-                li{
+
+                li {
                     line-height: 1.5;
-                    a{
+
+                    a {
                         font-weight: bold;
                     }
                 }

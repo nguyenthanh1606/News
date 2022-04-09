@@ -1,0 +1,27 @@
+.agency {
+    margin-bottom: 2rem;
+
+    .s-detail-list {
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #ccc;
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        gap: 15px;
+
+        .s-detail--item {
+            text-align: center;
+
+            img {
+                display: inline-block;
+                width: 118px;
+            }
+
+        }
+    }
+
+    &-name {
+        text-transform: capitalize;
+        font-size: 1.25rem;
+        font-weight: 800;
+    }
+}
