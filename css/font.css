@@ -8,3 +8,33 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'SVN-Proxima Nova';
+    src: url('../fonts/SVN-ProximaNova/SVN-ProximaNovaSemiBold.eot');
+    src: url('../fonts/SVN-ProximaNova/SVN-ProximaNovaSemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SVN-ProximaNova/SVN-ProximaNovaSemiBold.woff') format('woff'),
+        url('../fonts/SVN-ProximaNova/SVN-ProximaNovaSemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SVN-Proxima Nova';
+    src: url('../fonts/SVN-ProximaNova/SVN-ProximaNova.eot');
+    src: url('../fonts/SVN-ProximaNova/SVN-ProximaNova.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SVN-ProximaNova/SVN-ProximaNova.woff') format('woff'),
+        url('../fonts/SVN-ProximaNova/SVN-ProximaNova.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SVN-Proxima Nova';
+    src: url('../fonts/SVN-ProximaNova/SVN-ProximaNova.eot');
+    src: url('../fonts/SVN-ProximaNova/SVN-ProximaNovaBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SVN-ProximaNova/SVN-ProximaNovaBold.woff') format('woff'),
+        url('../fonts/SVN-ProximaNova/SVN-ProximaNovaBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
