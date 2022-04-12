@@ -141,4 +141,10 @@
         color: #fff;
     }
 
+    .btn-see-default.c-black:hover {
+        color: $color-main;
+        background-color: white;
+        box-shadow: none;
+        border-color: white;
+    }
 }

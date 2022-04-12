@@ -82,6 +82,7 @@ footer {
         font-size: 0;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-between;
 
         li {
@@ -111,6 +112,11 @@ footer {
             a {
                 color: #030303;
                 font-weight: 600;
+
+                &:hover {
+                    color: $color-main;
+                    text-decoration: underline;
+                }
             }
         }
     }
@@ -140,6 +146,27 @@ footer {
         img {
             margin: auto;
             display: inherit;
+        }
+    }
+
+    .list-menu-w100 {
+        width: 100%;
+        margin-bottom: 1rem;
+
+        p {
+            padding-left: 15px;
+        }
+
+        .child-menu-footer {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            grid-auto-flow: column;
+
+            li {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
         }
     }
 }

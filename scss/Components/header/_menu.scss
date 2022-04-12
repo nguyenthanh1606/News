@@ -20,6 +20,10 @@
             text-align: center;
             position: relative;
             font-family: $font-menu;
+            padding-top: 6px;
+            padding-bottom: 8px;
+            transition: all 0.4s ease-in-out;
+            border-radius: 2rem;
 
             a {
                 padding: 1.25rem 0.5rem;
@@ -41,30 +45,41 @@
                 border-radius: 50%;
                 color: #000;
             }
+
             &.active {
+                background-color: black;
+
                 &:before {
-                    content: "\f0da";
-                    font-family: "Font Awesome 5 Pro";
-                    font-weight: 900;
-                    position: absolute;
-                    transition: all 0.3s ease-in-out;
-                    width: 5px;
-                    height: 5px;
-                    left: 0;
-                    top: calc(50% - 2px);
-                    color: #000;
-                    line-height: 8px;
+                    content: none;
                 }
+
             }
 
-            &:hover {
-                a {
-                    color: $color-main;
-                }
+            // &.active {
+            //     &:before {
+            //         content: "\f0da";
+            //         font-family: "Font Awesome 5 Pro";
+            //         font-weight: 900;
+            //         position: absolute;
+            //         transition: all 0.3s ease-in-out;
+            //         width: 5px;
+            //         height: 5px;
+            //         left: 0;
+            //         top: calc(50% - 2px);
+            //         color: #000;
+            //         line-height: 8px;
+            //     }
+            // }
 
-                &:not(:last-child):after {
-                    background-color: #2b4ea1;
-                }
+            &:hover {
+                // a {
+                //     color: $color-main;
+                // }
+
+                background-color: black;
+                border-radius: 2rem;
+
+
             }
         }
     }
@@ -75,18 +90,34 @@
         a {
             color: #fff;
         }
+
         &:not(:first-child)::before {
             background-color: #fff;
         }
-        &.active::before{
+
+        &.active::before {
             color: #fff;
         }
-        &:hover{
-            &::before, a {
-                color: $color-main;
+
+        &:hover {
+            &:before {
+                content: none;
             }
-            &::before{
-                background-color: $color-main;
+        }
+    }
+}
+
+.is-fixed {
+    .menu-top ul.menu {
+        li {
+
+            &.active,
+            &:hover {
+                background-color: white;
+
+                a {
+                    color: #000;
+                }
             }
         }
     }

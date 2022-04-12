@@ -8,8 +8,9 @@
     <title>Home</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/all.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../css/jquery.mmenu.all.css">
+    <link rel="stylesheet" href="../css/fancybox.css" />
     <!-- fonts local -->
     <link rel="stylesheet" href="../css/font.css">
     <!-- font google -->
@@ -25,20 +26,20 @@
 
 <body>
     <div class="top text-center">
-        <a href="#!" class="notify">covid-19: những cập nhật mới nhất và hiện trạng tại thành phố này</a>
+        <a href="" class="notify">covid-19: những cập nhật mới nhất và hiện trạng tại thành phố này</a>
     </div>
     <header class="site-2">
         <div class="wrapper header">
             <div class="logo">
-                <a href="#!"><img src="../images/toidi/logo.png" alt="Sài Gòn Insign" class="img-fluid"></a>
+                <a href=""><img src="../images/toidi/logo.png" alt="Sài Gòn Insign" class="img-fluid"></a>
             </div>
             <div class="menu-top site-2">
                 <ul class="menu">
-                    <li class="menu-item active"><a href="#!">Tổng quan</a></li>
-                    <li class="menu-item"><a href="#!">Khu vực</a></li>
-                    <li class="menu-item"><a href="#!">Địa điểm</a></li>
-                    <li class="menu-item"><a href="#!">Trải nghiệm</a></li>
-                    <li class="menu-item"><a href="#!">Sự kiện</a></li>
+                    <li class="menu-item"><a href="">Tổng quan</a></li>
+                    <li class="menu-item active"><a href="">Khu vực</a></li>
+                    <li class="menu-item"><a href="">Địa điểm</a></li>
+                    <li class="menu-item"><a href="">Trải nghiệm</a></li>
+                    <li class="menu-item"><a href="">Sự kiện</a></li>
                 </ul>
             </div>
             <div class="search-box">
@@ -48,7 +49,7 @@
                 <input type="text" class="input-search" placeholder="Type to Search...">
             </div>
             <div class="login">
-                <a href="#!" class="btn-login">
+                <a href="" class="btn-login">
                     <ion-icon style="font-size: 1.25rem" name="menu-outline"></ion-icon>
                     <ion-icon style="font-size: 2.5rem; color:#c8c9c9" name="person-circle-outline"></ion-icon>
                 </a>
@@ -75,7 +76,7 @@
                 <div class="col-md-8 aboutUs-top">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="#">Tổng quan</a></li>
+                            <li class="breadcrumb-item"><a href="">Tổng quan</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Giới thiệu chung</li>
                         </ol>
                     </nav>
@@ -103,17 +104,18 @@
                             sodales. Nullam mollis rhoncus sapien, et vestibulum est elementum vitae. Nullam mattis
                             ultrices varius.</p>
                     </div>
-                    <a href="#!" class="ef-1 p-2"><strong>Đọc thêm</strong></a>
+                    <a href="" class="ef-1 p-2"><strong>Đọc thêm</strong></a>
                 </div>
                 <div class="col-md-4 pl-5">
                     <div class="list-content">
                         <h4 class="tile">Nội dung</h4>
                         <ol class="list-ct">
-                            <li><a href="#!">Những gợi ý chung về Sài Gòn</a></li>
-                            <li><a href="#!">Những gợi ý chung về Sài Gòn</a></li>
-                            <li><a href="#!">Những gợi ý chung về Sài Gòn</a></li>
-                            <li><a href="#!">Những gợi ý chung về Sài Gòn</a></li>
-                            <li><a href="#!">Những gợi ý chung về Sài Gòn</a></li>
+                            <li><a href="#1">Những gợi ý chung về Sài Gòn</a></li>
+                            <li><a href="#2">Top điểm đến phổ biến nhất</a></li>
+                            <li><a href="#3">Trải nghiệm bạn phải thử</a></li>
+                            <li><a href="#4">Những quận/huyện đặc sắc </a></li>
+                            <li><a href="#5">Sự kiện sắp diễn ra</a></li>
+                            <li><a href="#6">Câu chuyện lữ hành</a></li>
                         </ol>
                     </div>
                 </div>
@@ -124,29 +126,37 @@
         <div class="row my-2">
             <div class="col-md-7 px-1 hover-ef-1">
                 <div class="thumbnail thumb-img">
-                    <img src="../images/toidi/img-lg-1-1.png" alt="" class="w-100 h-100">
+                    <a data-fancybox="gallery" href="../images/toidi/img-lg-1-1.png">
+                        <img src="../images/toidi/img-lg-1-1.png" alt="" class="w-100 h-100">
+                    </a>
                 </div>
             </div>
             <div class="col-md-5 px-1 hover-ef-1">
                 <div class="thumbnail thumb-img">
-                    <img src="../images/toidi/img-md-1-1.png" alt="" class="w-100 h-100">
+                    <a data-fancybox="gallery" href="../images/toidi/img-md-1-1.png">
+                        <img src="../images/toidi/img-md-1-1.png" alt="" class="w-100 h-100">
+                    </a>
                 </div>
             </div>
         </div>
         <div class="row my-2 flex-row-reverse">
             <div class="col-md-7 px-1 hover-ef-1">
                 <div class="thumbnail thumb-img">
-                    <img src="../images/toidi/img-lg-1-1.png" alt="" class="w-100 h-100">
+                    <a data-fancybox="gallery" href="../images/toidi/img-lg-1-1.png">
+                        <img src="../images/toidi/img-lg-1-1.png" alt="" class="w-100 h-100">
+                    </a>
                 </div>
             </div>
             <div class="col-md-5 px-1 hover-ef-1">
                 <div class="thumbnail thumb-img">
-                    <img src="../images/toidi/img-md-1-1.png" alt="" class="w-100 h-100">
+                    <a data-fancybox="gallery" href="../images/toidi/img-md-1-1.png">
+                        <img src="../images/toidi/img-md-1-1.png" alt="" class="w-100 h-100">
+                    </a>
                 </div>
             </div>
         </div>
     </section>
-    <section class="top-suggest wrapper pt-4">
+    <section id="1" class="top-suggest wrapper pt-4">
         <div class="s-head">
             <h1 class="title">Những gợi ý tiêu biểu về Tp. Hồ Chí Minh</h1>
             <span class="desc-group"><i>Pellentesque commodo interdum diam sed maximus. Cras in nulla tincidunt justo
@@ -155,21 +165,21 @@
         </div>
         <div class="s-detail pt-5 pb-3">
             <div class="see-more">
-                <a href="#!" class="btn-see-default c-black">Xem các chủ đề khác</a>
+                <a href="" class="btn-see-default c-black">Xem các chủ đề khác</a>
             </div>
             <div class="swiper topSuggestSwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="item">
                             <div class="thumbnail hover-ef-1">
-                                <a href="#!" class="d-block thumb-img">
+                                <a href="" class="d-block thumb-img">
                                     <img src="../images/toidi/img-md-2-1.png" alt="" class="img-fluid w-100">
                                 </a>
                             </div>
                             <div class="content py-4 px-3">
                                 <div class="head">
                                     <div class="title">
-                                        <a href="#!" class="c-black">Sông nước bến chợ sài gòn xưa</a>
+                                        <a href="" class="c-black">Sông nước bến chợ sài gòn xưa</a>
                                     </div>
                                 </div>
                                 <div class="detail">
@@ -191,14 +201,14 @@
                     <div class="swiper-slide">
                         <div class="item">
                             <div class="thumbnail hover-ef-1">
-                                <a href="#!" class="d-block thumb-img">
+                                <a href="" class="d-block thumb-img">
                                     <img src="../images/toidi/img-md-2-1.png" alt="" class="img-fluid w-100">
                                 </a>
                             </div>
                             <div class="content py-4 px-3">
                                 <div class="head">
                                     <div class="title">
-                                        <a href="#!" class="c-black">Sông nước bến chợ sài gòn xưa</a>
+                                        <a href="" class="c-black">Sông nước bến chợ sài gòn xưa</a>
                                     </div>
                                 </div>
                                 <div class="detail">
@@ -220,14 +230,14 @@
                     <div class="swiper-slide">
                         <div class="item">
                             <div class="thumbnail hover-ef-1">
-                                <a href="#!" class="d-block thumb-img">
+                                <a href="" class="d-block thumb-img">
                                     <img src="../images/toidi/img-md-2-1.png" alt="" class="img-fluid w-100">
                                 </a>
                             </div>
                             <div class="content py-4 px-3">
                                 <div class="head">
                                     <div class="title">
-                                        <a href="#!" class="c-black">Sông nước bến chợ sài gòn xưa</a>
+                                        <a href="" class="c-black">Sông nước bến chợ sài gòn xưa</a>
                                     </div>
                                 </div>
                                 <div class="detail">
@@ -249,14 +259,14 @@
                     <div class="swiper-slide">
                         <div class="item">
                             <div class="thumbnail hover-ef-1">
-                                <a href="#!" class="d-block thumb-img">
+                                <a href="" class="d-block thumb-img">
                                     <img src="../images/toidi/img-md-2-1.png" alt="" class="img-fluid w-100">
                                 </a>
                             </div>
                             <div class="content py-4 px-3">
                                 <div class="head">
                                     <div class="title">
-                                        <a href="#!" class="c-black">Sông nước bến chợ sài gòn xưa</a>
+                                        <a href="" class="c-black">Sông nước bến chợ sài gòn xưa</a>
                                     </div>
                                 </div>
                                 <div class="detail">
@@ -276,12 +286,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next swiperNext-botRight"></div>
+                <div class="swiper-button-prev swiperPrev-botRight"></div>
             </div>
         </div>
     </section>
-    <section class="top-address wrapper">
+    <section id="2" class="top-address wrapper">
         <div class="s-head">
             <h1 class="title">Top điểm đến phổ biến</h1>
             <span class="desc-group"><i>Pellentesque commodo interdum diam sed maximus. Cras in nulla tincidunt justo
@@ -290,15 +300,15 @@
         </div>
         <div class="s-detail py-3">
             <div class="see-more">
-                <a href="#!" class="btn-see-default c-black">Xem các chủ đề khác</a>
+                <a href="" class="btn-see-default c-black">Xem các chủ đề khác</a>
             </div>
             <div class="sub-group py-3">
                 <ul>
-                    <li class="active"><a class="c-black" href="#!">Tất cả</a></li>
-                    <li><a class="c-black" href="#!">Thắng cảnh</a></li>
-                    <li><a class="c-black" href="#!">Điểm đến văn hóa</a></li>
-                    <li><a class="c-black" href="#!">Điểm đến tôn giáo</a></li>
-                    <li><a class="c-black" href="#!">Điểm tham quan</a></li>
+                    <li class="active"><a class="c-black" href="">Tất cả</a></li>
+                    <li><a class="c-black" href="">Thắng cảnh</a></li>
+                    <li><a class="c-black" href="">Điểm đến văn hóa</a></li>
+                    <li><a class="c-black" href="">Điểm đến tôn giáo</a></li>
+                    <li><a class="c-black" href="">Điểm tham quan</a></li>
                 </ul>
             </div>
             <div class="swiper topAddressSwiper">
@@ -307,14 +317,86 @@
                         <div class="item">
                             <div class="thumbnail hover-ef-1">
                                 <div class="thumb-img">
-                                    <a href="#!">
+                                    <a href="">
                                         <img src="../images/toidi/img-md-3-1.png" class="img-full-w" alt="">
                                     </a>
                                 </div>
                                 <div class="thumb-content">
                                     <span class="tag">Đỉểm tham quan mua sắm</span>
                                     <div class="title">
-                                        <a href="#!" class="c-black">CHỢ BẾN THÀNH</a>
+                                        <a href="" class="c-black">CHỢ BẾN THÀNH</a>
+                                    </div>
+                                    <div class="desc">
+                                        <p>Maecenas ac aliquam erat, sed aliquam dolor. Quisque rutrum lacus eget sem
+                                            bibendum,
+                                            id semper elit mattis. Pellentesque elementum, sem vel cursus vehicula,
+                                            ipsum massa
+                                            laoreet neque, eu suscipit lacus arcu vitae odio. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="item">
+                            <div class="thumbnail hover-ef-1">
+                                <div class="thumb-img">
+                                    <a href="">
+                                        <img src="../images/toidi/img-md-3-1.png" class="img-full-w" alt="">
+                                    </a>
+                                </div>
+                                <div class="thumb-content">
+                                    <span class="tag">Đỉểm tham quan mua sắm</span>
+                                    <div class="title">
+                                        <a href="" class="c-black">CHỢ BẾN THÀNH</a>
+                                    </div>
+                                    <div class="desc">
+                                        <p>Maecenas ac aliquam erat, sed aliquam dolor. Quisque rutrum lacus eget sem
+                                            bibendum,
+                                            id semper elit mattis. Pellentesque elementum, sem vel cursus vehicula,
+                                            ipsum massa
+                                            laoreet neque, eu suscipit lacus arcu vitae odio. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="item">
+                            <div class="thumbnail hover-ef-1">
+                                <div class="thumb-img">
+                                    <a href="">
+                                        <img src="../images/toidi/img-md-3-1.png" class="img-full-w" alt="">
+                                    </a>
+                                </div>
+                                <div class="thumb-content">
+                                    <span class="tag">Đỉểm tham quan mua sắm</span>
+                                    <div class="title">
+                                        <a href="" class="c-black">CHỢ BẾN THÀNH</a>
+                                    </div>
+                                    <div class="desc">
+                                        <p>Maecenas ac aliquam erat, sed aliquam dolor. Quisque rutrum lacus eget sem
+                                            bibendum,
+                                            id semper elit mattis. Pellentesque elementum, sem vel cursus vehicula,
+                                            ipsum massa
+                                            laoreet neque, eu suscipit lacus arcu vitae odio. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="item">
+                            <div class="thumbnail hover-ef-1">
+                                <div class="thumb-img">
+                                    <a href="">
+                                        <img src="../images/toidi/img-md-3-1.png" class="img-full-w" alt="">
+                                    </a>
+                                </div>
+                                <div class="thumb-content">
+                                    <span class="tag">Đỉểm tham quan mua sắm</span>
+                                    <div class="title">
+                                        <a href="" class="c-black">CHỢ BẾN THÀNH</a>
                                     </div>
                                     <div class="desc">
                                         <p>Maecenas ac aliquam erat, sed aliquam dolor. Quisque rutrum lacus eget sem
@@ -328,10 +410,12 @@
                         </div>
                     </div>
                 </div>
+                <div class="swiper-button-next swiperNext-botRight"></div>
+                <div class="swiper-button-prev swiperPrev-botRight"></div>
             </div>
         </div>
     </section>
-    <section class="top-try wrapper">
+    <section id="3" class="top-try wrapper">
         <div class="s-head">
             <h1 class="title">Những trải nghiệm phải thử</h1>
             <span class="desc-group"><i>Pellentesque commodo interdum diam sed maximus. Cras in nulla tincidunt justo
@@ -340,7 +424,7 @@
         </div>
         <div class="s-detail pt-5">
             <div class="see-more">
-                <a href="#!" class="btn-see-default c-black">Xem các chủ đề khác</a>
+                <a href="" class="btn-see-default c-black">Xem các chủ đề khác</a>
             </div>
             <div class="swiper topTrySwiper">
                 <div class="swiper-wrapper">
@@ -349,14 +433,14 @@
                             <div class="item-top py-4 px-3">
                                 <span class="tag color-main font-bold">Đời sống</span>
                                 <div class="title mt-3">
-                                    <a href="#!" class="c-black h5 font-bold">Uống bia tươi về đêm ở Phố Tây
+                                    <a href="" class="c-black h5 font-bold">Uống bia tươi về đêm ở Phố Tây
                                         Bùi Viện Uống bia tươi về đêm ở Phố Tây
                                         Bùi Viện</a>
                                 </div>
                             </div>
                             <div class="thumbnail hover-ef-1">
                                 <div class="thumb-img">
-                                    <a href="#!">
+                                    <a href="">
                                         <img src="../images/toidi/img-sm-4-1.png" class="img-full-w" alt="">
                                     </a>
                                 </div>
@@ -377,14 +461,14 @@
                             <div class="item-top py-4 px-3">
                                 <span class="tag color-main font-bold">Đời sống</span>
                                 <div class="title mt-3">
-                                    <a href="#!" class="c-black h5 font-bold">Uống bia tươi về đêm ở Phố Tây
+                                    <a href="" class="c-black h5 font-bold">Uống bia tươi về đêm ở Phố Tây
                                         Bùi Viện Uống bia tươi về đêm ở Phố Tây
                                         Bùi Viện</a>
                                 </div>
                             </div>
                             <div class="thumbnail hover-ef-1">
                                 <div class="thumb-img">
-                                    <a href="#!">
+                                    <a href="">
                                         <img src="../images/toidi/img-sm-4-1.png" class="img-full-w" alt="">
                                     </a>
                                 </div>
@@ -405,14 +489,14 @@
                             <div class="item-top py-4 px-3">
                                 <span class="tag color-main font-bold">Đời sống</span>
                                 <div class="title mt-3">
-                                    <a href="#!" class="c-black h5 font-bold">Uống bia tươi về đêm ở Phố Tây
+                                    <a href="" class="c-black h5 font-bold">Uống bia tươi về đêm ở Phố Tây
                                         Bùi Viện Uống bia tươi về đêm ở Phố Tây
                                         Bùi Viện</a>
                                 </div>
                             </div>
                             <div class="thumbnail hover-ef-1">
                                 <div class="thumb-img">
-                                    <a href="#!">
+                                    <a href="">
                                         <img src="../images/toidi/img-sm-4-1.png" class="img-full-w" alt="">
                                     </a>
                                 </div>
@@ -433,14 +517,14 @@
                             <div class="item-top py-4 px-3">
                                 <span class="tag color-main font-bold">Đời sống</span>
                                 <div class="title mt-3">
-                                    <a href="#!" class="c-black h5 font-bold">Uống bia tươi về đêm ở Phố Tây
+                                    <a href="" class="c-black h5 font-bold">Uống bia tươi về đêm ở Phố Tây
                                         Bùi Viện Uống bia tươi về đêm ở Phố Tây
                                         Bùi Viện</a>
                                 </div>
                             </div>
                             <div class="thumbnail hover-ef-1">
                                 <div class="thumb-img">
-                                    <a href="#!">
+                                    <a href="">
                                         <img src="../images/toidi/img-sm-4-1.png" class="img-full-w" alt="">
                                     </a>
                                 </div>
@@ -461,14 +545,14 @@
                             <div class="item-top py-4 px-3">
                                 <span class="tag color-main font-bold">Đời sống</span>
                                 <div class="title mt-3">
-                                    <a href="#!" class="c-black h5 font-bold">Uống bia tươi về đêm ở Phố Tây
+                                    <a href="" class="c-black h5 font-bold">Uống bia tươi về đêm ở Phố Tây
                                         Bùi Viện Uống bia tươi về đêm ở Phố Tây
                                         Bùi Viện</a>
                                 </div>
                             </div>
                             <div class="thumbnail hover-ef-1">
                                 <div class="thumb-img">
-                                    <a href="#!">
+                                    <a href="">
                                         <img src="../images/toidi/img-sm-4-1.png" class="img-full-w" alt="">
                                     </a>
                                 </div>
@@ -485,44 +569,92 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next swiperNext-botRight"></div>
+                <div class="swiper-button-prev swiperPrev-botRight"></div>
             </div>
         </div>
     </section>
-    <section class="top-district wrapper py-3">
+    <section id="4" class="top-district wrapper py-3">
         <div class="s-head">
             <h1 class="title">Quận/Huyện nào đặc sắc?</h1>
         </div>
         <div class="s-detail">
             <div class="see-more">
-                <a href="#!" class="btn-see-default c-black">Xem các chủ đề khác</a>
+                <a href="" class="btn-see-default c-black">Xem các chủ đề khác</a>
             </div>
             <div class="swiper topDistrictSwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="item">
                             <div class="thumbnail hover-ef-1">
-                                <a href="#!" class="d-block thumb-img">
+                                <a href="" class="d-block thumb-img">
                                     <img src="../images/toidi/img-md-5-1.png" alt="" class="img-fluid w-100">
                                 </a>
                             </div>
                             <div class="content py-4">
                                 <div class="head">
                                     <div class="title">
-                                        <a href="#!" class="c-black h3 font-bold">Quận 5</a>
+                                        <a href="" class="c-black h3 font-bold">Quận 5</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="item">
+                            <div class="thumbnail hover-ef-1">
+                                <a href="" class="d-block thumb-img">
+                                    <img src="../images/toidi/img-md-5-1.png" alt="" class="img-fluid w-100">
+                                </a>
+                            </div>
+                            <div class="content py-4">
+                                <div class="head">
+                                    <div class="title">
+                                        <a href="" class="c-black h3 font-bold">Quận 5</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="item">
+                            <div class="thumbnail hover-ef-1">
+                                <a href="" class="d-block thumb-img">
+                                    <img src="../images/toidi/img-md-5-1.png" alt="" class="img-fluid w-100">
+                                </a>
+                            </div>
+                            <div class="content py-4">
+                                <div class="head">
+                                    <div class="title">
+                                        <a href="" class="c-black h3 font-bold">Quận 5</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="item">
+                            <div class="thumbnail hover-ef-1">
+                                <a href="" class="d-block thumb-img">
+                                    <img src="../images/toidi/img-md-5-1.png" alt="" class="img-fluid w-100">
+                                </a>
+                            </div>
+                            <div class="content py-4">
+                                <div class="head">
+                                    <div class="title">
+                                        <a href="" class="c-black h3 font-bold">Quận 5</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next swiperNext-botRight"></div>
+                <div class="swiper-button-prev swiperPrev-botRight"></div>
             </div>
         </div>
     </section>
-    <section class="top-event dark-theme mb-0">
+    <section id="5" class="top-event dark-theme mb-0">
         <div class="wrapper py-4">
             <div class="s-head">
                 <h1 class="title">Sự kiện nào sắp diễn ra ở đây?</h1>
@@ -532,7 +664,7 @@
                         consectetur
                         est.</strong></span>
                 <div class="see-more">
-                    <a href="#!" class="btn-see-default c-black">Xem các chủ đề khác</a>
+                    <a href="" class="btn-see-default c-black">Xem các chủ đề khác</a>
                 </div>
             </div>
 
@@ -550,7 +682,7 @@
                                             <div class="head my-3">
                                                 <span class="tag color-main font-bold">Sự kiện chung</span>
                                                 <div class="title mt-3">
-                                                    <a href="#!" class="c-black font-bold h3 text-uppercase">GIÁNG SINH
+                                                    <a href="" class="c-black font-bold h3 text-uppercase">GIÁNG SINH
                                                         Ở SÀI
                                                         GÒN</a>
                                                 </div>
@@ -568,7 +700,7 @@
                                 </div>
                                 <div class="s-detail--first_child-1">
                                     <div class="col">
-                                        <div class="thumbnail hover-ef-1"><a href="#!" class="d-block thumb-img"><img
+                                        <div class="thumbnail hover-ef-1"><a href="" class="d-block thumb-img"><img
                                                     src="../images/toidi/img-sm-6-1.png" class="img-fluid w-100"
                                                     alt=""></a>
                                         </div>
@@ -577,16 +709,16 @@
                                         <div class="head my-3">
                                             <span class="tag color-main font-bold">Giáng sinh ở Sài Gòn</span>
                                             <div class="title mt-2">
-                                                <a href="#!" class="c-black font-bold">Sài Gòn nhộn nhịp đón mùa
+                                                <a href="" class="c-black font-bold">Sài Gòn nhộn nhịp đón mùa
                                                     Noel đến sớm</a>
                                             </div>
                                         </div>
                                         <div class="author row">
                                             <div class="avatar col-md-2">
                                                 <img src="../images/agency.png" class="rounded-circle"
-                                                    style="width: 40px" alt="">
+                                                    style="width: 50px" alt="">
                                             </div>
-                                            <div class="col-md-9">
+                                            <div class="col-md-9 author-info">
                                                 <div>
                                                     <strong class="d-inline-block mr-4">Quỳnh Thư</strong>
                                                 </div>
@@ -606,7 +738,7 @@
                                 </div>
                                 <div class="s-detail--first_child-2">
                                     <div class="col">
-                                        <div class="thumbnail hover-ef-1"><a href="#!" class="d-block thumb-img"><img
+                                        <div class="thumbnail hover-ef-1"><a href="" class="d-block thumb-img"><img
                                                     src="../images/toidi/img-sm-6-1.png" class="img-fluid w-100"
                                                     alt=""></a>
                                         </div>
@@ -615,16 +747,16 @@
                                         <div class="head my-3">
                                             <span class="tag color-main font-bold">Giáng sinh ở Sài Gòn</span>
                                             <div class="title mt-2">
-                                                <a href="#!" class="c-black font-bold">Sài Gòn nhộn nhịp đón mùa
+                                                <a href="" class="c-black font-bold">Sài Gòn nhộn nhịp đón mùa
                                                     Noel đến sớm</a>
                                             </div>
                                         </div>
                                         <div class="author row">
                                             <div class="avatar col-md-2">
                                                 <img src="../images/agency.png" class="rounded-circle"
-                                                    style="width: 40px" alt="">
+                                                    style="width: 50px" alt="">
                                             </div>
-                                            <div class="col-md-9">
+                                            <div class="col-md-9 author-info">
                                                 <div>
                                                     <strong class="d-inline-block mr-4">Quỳnh Thư</strong>
                                                 </div>
@@ -657,7 +789,7 @@
                                             <div class="head my-3">
                                                 <span class="tag color-main font-bold">Sự kiện chung</span>
                                                 <div class="title mt-3">
-                                                    <a href="#!" class="c-black font-bold h3 text-uppercase">GIÁNG SINH
+                                                    <a href="" class="c-black font-bold h3 text-uppercase">GIÁNG SINH
                                                         Ở SÀI
                                                         GÒN</a>
                                                 </div>
@@ -675,7 +807,7 @@
                                 </div>
                                 <div class="s-detail--first_child-1">
                                     <div class="col">
-                                        <div class="thumbnail hover-ef-1"><a href="#!" class="d-block thumb-img"><img
+                                        <div class="thumbnail hover-ef-1"><a href="" class="d-block thumb-img"><img
                                                     src="../images/toidi/img-sm-6-1.png" class="img-fluid w-100"
                                                     alt=""></a>
                                         </div>
@@ -684,14 +816,14 @@
                                         <div class="head my-3">
                                             <span class="tag color-main font-bold">Giáng sinh ở Sài Gòn</span>
                                             <div class="title mt-2">
-                                                <a href="#!" class="c-black font-bold">Sài Gòn nhộn nhịp đón mùa
+                                                <a href="" class="c-black font-bold">Sài Gòn nhộn nhịp đón mùa
                                                     Noel đến sớm</a>
                                             </div>
                                         </div>
                                         <div class="author row">
                                             <div class="avatar col-md-2">
                                                 <img src="../images/agency.png" class="rounded-circle"
-                                                    style="width: 40px" alt="">
+                                                    style="width: 50px" alt="">
                                             </div>
                                             <div class="col-md-9">
                                                 <div>
@@ -713,7 +845,7 @@
                                 </div>
                                 <div class="s-detail--first_child-2">
                                     <div class="col">
-                                        <div class="thumbnail hover-ef-1"><a href="#!" class="d-block thumb-img"><img
+                                        <div class="thumbnail hover-ef-1"><a href="" class="d-block thumb-img"><img
                                                     src="../images/toidi/img-sm-6-1.png" class="img-fluid w-100"
                                                     alt=""></a>
                                         </div>
@@ -722,14 +854,14 @@
                                         <div class="head my-3">
                                             <span class="tag color-main font-bold">Giáng sinh ở Sài Gòn</span>
                                             <div class="title mt-2">
-                                                <a href="#!" class="c-black font-bold">Sài Gòn nhộn nhịp đón mùa
+                                                <a href="" class="c-black font-bold">Sài Gòn nhộn nhịp đón mùa
                                                     Noel đến sớm</a>
                                             </div>
                                         </div>
                                         <div class="author row">
                                             <div class="avatar col-md-2">
                                                 <img src="../images/agency.png" class="rounded-circle"
-                                                    style="width: 40px" alt="">
+                                                    style="width: 50px" alt="">
                                             </div>
                                             <div class="col-md-9">
                                                 <div>
@@ -753,20 +885,20 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next swiperNext-botRight"></div>
+                <div class="swiper-button-prev swiperPrev-botRight"></div>
             </div>
         </div>
         </div>
     </section>
-    <section class="top-story mt-0">
+    <section id="6" class="top-story mt-0">
         <div class="thumbail">
             <img src="../images/toidi/banner-home-child.png" alt="" class="w-100">
         </div>
         <div class="content-top dark-theme py-5">
             <div class="wrapper">
                 <div class="s-head">
-                    <h1 class="title">Những trải nghiệm phải thử</h1>
+                    <h1 class="title">Câu chuyện lữ hành</h1>
                     <span class="desc-group"><strong>Pellentesque commodo interdum diam sed maximus. Cras in nulla
                             tincidunt
                             justo
@@ -775,7 +907,7 @@
                             est.</strong></span>
                 </div>
                 <div class="see-more mt-5">
-                    <a href="#!" class="btn-see-default c-black">Xem các chủ đề khác</a>
+                    <a href="" class="btn-see-default c-black">Xem các chủ đề khác</a>
                 </div>
             </div>
         </div>
@@ -786,27 +918,28 @@
                         <div class="swiper-slide">
                             <div class="item">
                                 <div class="thumbnail hover-ef-1">
-                                    <a href="#!" class="d-block thumb-img">
+                                    <a href="" class="d-block thumb-img">
                                         <img src="../images/toidi/img-md-7-1.png" alt="" class="img-fluid w-100">
                                     </a>
                                 </div>
                                 <div class="content py-4 px-3">
                                     <div class="head">
                                         <div class="title">
-                                            <a href="#!" class="c-black">Đảo Thạnh An - một không gian thanh khiết và
+                                            <a href="" class="c-black">Đảo Thạnh An - một không gian thanh khiết và
                                                 lặng yên đến nao lòng</a>
                                         </div>
                                     </div>
                                     <div class="detail">
                                         <div class="author row mb-3">
-                                            <div class="avatar col-md-2">
+                                            <div class="avatar text-center pr-0 col-md-2">
                                                 <img src="../images/agency.png" class="rounded-circle"
-                                                    style="width: 40px" alt="">
+                                                    style="width: 50px" alt="">
                                             </div>
-                                            <div class="col-md-9 author-info">
+                                            <div class="col-md-9 px-1 author-info">
                                                 <div>
-                                                    <strong class="d-inline-block mr-4">Quỳnh Thư</strong><span>TÂY NINH
-                                                        ZEN</span>
+                                                    <strong class="d-inline-block mr-4">Quỳnh Thư</strong><small
+                                                        class="color-main font-bold">TÂY NINH
+                                                        ZEN</small>
                                                 </div>
                                                 <div>
                                                     <span><small>18:30 - 12/11/2021</small></span>
@@ -831,9 +964,157 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <div class="thumbnail hover-ef-1">
+                                    <a href="" class="d-block thumb-img">
+                                        <img src="../images/toidi/img-md-7-1.png" alt="" class="img-fluid w-100">
+                                    </a>
+                                </div>
+                                <div class="content py-4 px-3">
+                                    <div class="head">
+                                        <div class="title">
+                                            <a href="" class="c-black">Đảo Thạnh An - một không gian thanh khiết và
+                                                lặng yên đến nao lòng</a>
+                                        </div>
+                                    </div>
+                                    <div class="detail">
+                                        <div class="author row mb-3">
+                                            <div class="avatar text-center pr-0 col-md-2">
+                                                <img src="../images/agency.png" class="rounded-circle"
+                                                    style="width: 50px" alt="">
+                                            </div>
+                                            <div class="col-md-9 px-1 author-info">
+                                                <div>
+                                                    <strong class="d-inline-block mr-4">Quỳnh Thư</strong><small
+                                                        class="color-main font-bold">TÂY NINH
+                                                        ZEN</small>
+                                                </div>
+                                                <div>
+                                                    <span><small>18:30 - 12/11/2021</small></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="desc">
+                                            <p>Maecenas ac aliquam erat, sed aliquam dolor. Quisque rutrum lacus eget
+                                                sem
+                                                bibendum,
+                                                id
+                                                semper elit mattis. Pellentesque elementum, sem vel cursus vehicula,
+                                                ipsum
+                                                massa
+                                                laoreet
+                                                neque, eu suscipit lacus arcu vitae odio. Morbi consectetur erat in
+                                                interdum
+                                                venenatis.
+                                                Cras at pellentesque mauris. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <div class="thumbnail hover-ef-1">
+                                    <a href="" class="d-block thumb-img">
+                                        <img src="../images/toidi/img-md-7-1.png" alt="" class="img-fluid w-100">
+                                    </a>
+                                </div>
+                                <div class="content py-4 px-3">
+                                    <div class="head">
+                                        <div class="title">
+                                            <a href="" class="c-black">Đảo Thạnh An - một không gian thanh khiết và
+                                                lặng yên đến nao lòng</a>
+                                        </div>
+                                    </div>
+                                    <div class="detail">
+                                        <div class="author row mb-3">
+                                            <div class="avatar text-center pr-0 col-md-2">
+                                                <img src="../images/agency.png" class="rounded-circle"
+                                                    style="width: 50px" alt="">
+                                            </div>
+                                            <div class="col-md-9 px-1 author-info">
+                                                <div>
+                                                    <strong class="d-inline-block mr-4">Quỳnh Thư</strong><small
+                                                        class="color-main font-bold">TÂY NINH
+                                                        ZEN</small>
+                                                </div>
+                                                <div>
+                                                    <span><small>18:30 - 12/11/2021</small></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="desc">
+                                            <p>Maecenas ac aliquam erat, sed aliquam dolor. Quisque rutrum lacus eget
+                                                sem
+                                                bibendum,
+                                                id
+                                                semper elit mattis. Pellentesque elementum, sem vel cursus vehicula,
+                                                ipsum
+                                                massa
+                                                laoreet
+                                                neque, eu suscipit lacus arcu vitae odio. Morbi consectetur erat in
+                                                interdum
+                                                venenatis.
+                                                Cras at pellentesque mauris. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <div class="thumbnail hover-ef-1">
+                                    <a href="" class="d-block thumb-img">
+                                        <img src="../images/toidi/img-md-7-1.png" alt="" class="img-fluid w-100">
+                                    </a>
+                                </div>
+                                <div class="content py-4 px-3">
+                                    <div class="head">
+                                        <div class="title">
+                                            <a href="" class="c-black">Đảo Thạnh An - một không gian thanh khiết và
+                                                lặng yên đến nao lòng</a>
+                                        </div>
+                                    </div>
+                                    <div class="detail">
+                                        <div class="author row mb-3">
+                                            <div class="avatar text-center pr-0 col-md-2">
+                                                <img src="../images/agency.png" class="rounded-circle"
+                                                    style="width: 50px" alt="">
+                                            </div>
+                                            <div class="col-md-9 px-1 author-info">
+                                                <div>
+                                                    <strong class="d-inline-block mr-4">Quỳnh Thư</strong><small
+                                                        class="color-main font-bold">TÂY NINH
+                                                        ZEN</small>
+                                                </div>
+                                                <div>
+                                                    <span><small>18:30 - 12/11/2021</small></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="desc">
+                                            <p>Maecenas ac aliquam erat, sed aliquam dolor. Quisque rutrum lacus eget
+                                                sem
+                                                bibendum,
+                                                id
+                                                semper elit mattis. Pellentesque elementum, sem vel cursus vehicula,
+                                                ipsum
+                                                massa
+                                                laoreet
+                                                neque, eu suscipit lacus arcu vitae odio. Morbi consectetur erat in
+                                                interdum
+                                                venenatis.
+                                                Cras at pellentesque mauris. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <div class="swiper-button-next swiperNext-topRight"></div>
+                    <div class="swiper-button-prev swiperPrev-topRight"></div>
+
                 </div>
             </div>
         </div>
@@ -841,16 +1122,16 @@
     <footer class="wrapper container pb-4">
         <div class="row">
             <div class="col-md-4">
-                <div class="logo-footer pb-3"><a href="#!"><img src="../images/logo-2.png" class="img-fluid" alt=""></a>
+                <div class="logo-footer pb-3"><a href=""><img src="../images/logo-2.png" class="img-fluid" alt=""></a>
                 </div>
                 <div class="s-site py-3">
                     <p>Cổng thông tin toàn diện về Sài Gòn - Tp. Hồ Chí Minh. Giúp bạn tìm hiểu, khám phá và gắn bó hơn
                         với vùng đất này.</p>
                     <ul class="list-site">
-                        <li><a href="#!"><img src="../images/logo-1.png" class="img-fluid" alt=""></a></li>
-                        <li><a href="#!"><img src="../images/logo-1.png" class="img-fluid" alt=""></a></li>
-                        <li><a href="#!"><img src="../images/logo-1.png" class="img-fluid" alt=""></a></li>
-                        <li><a href="#!"><img src="../images/logo-1.png" class="img-fluid" alt=""></a></li>
+                        <li><a href=""><img src="../images/logo-1.png" class="img-fluid" alt=""></a></li>
+                        <li><a href=""><img src="../images/logo-1.png" class="img-fluid" alt=""></a></li>
+                        <li><a href=""><img src="../images/logo-1.png" class="img-fluid" alt=""></a></li>
+                        <li><a href=""><img src="../images/logo-1.png" class="img-fluid" alt=""></a></li>
                     </ul>
                     <p>Thống kê, giới thiệu đầy đủ nhất những chủ đề và nơi chốn nổi bật nhất của Sài Gòn - Tp.Hồ Chí
                         Minh để bạn tìm hiểu, khám phá và nghiên cứu. Nơi quy tụ mọi người am hiểu và viết về Sài Gòn.
@@ -905,36 +1186,80 @@
             <div class="col-md-8">
                 <div class="menu-footer">
                     <ul class="list-menu-footer">
-                        <li>
+                        <li class="list-menu-w100">
                             <p class="text-uppercase">VÙNG ĐẤT</p>
                             <ul class="child-menu-footer">
-                                <li><a href="#!">Đơn vị hành chánh</a></li>
-                                <li><a href="#!">Đơn vị hành chánh</a></li>
-                                <li><a href="#!">Đơn vị hành chánh</a></li>
-                                <li><a href="#!">Đơn vị hành chánh</a></li>
-                                <li><a href="#!">Đơn vị hành chánh</a></li>
-                                <li><a href="#!">Di tích lịch sử</a></li>
-                                <li><a href="#!">Đơn vị hành chánh</a></li>
-                                <li><a href="#!">Di tích lịch sử</a></li>
-                                <li><a href="#!">Đơn vị hành chánh</a></li>
-                                <li><a href="#!">Di tích lịch sử</a></li>
-                                <li><a href="#!">Đơn vị hành chánh</a></li>
-                                <li><a href="#!">Di tích lịch sử</a></li>
-                                <li><a href="#!">Đơn vị hành chánh</a></li>
-                                <li><a href="#!">Di tích lịch sử</a></li>
+                                <li><a href="">Quận 1</a></li>
+                                <li><a href="">Quận 2</a></li>
+                                <li><a href="">Quận 3</a></li>
+                                <li><a href="">Quận 4</a></li>
+                                <li><a href="">Quận 5</a></li>
+                                <li><a href="">Quận 6</a></li>
+                                <li><a href="">Quận 7</a></li>
+                                <li><a href="">Quận 8</a></li>
+                                <li><a href="">Quận 10</a></li>
+                                <li><a href="">Quận 11</a></li>
+                                <li><a href="">Quận 12</a></li>
+                                <li><a href="">Quận 1</a></li>
+                                <li><a href="">Quận 2</a></li>
+                                <li><a href="">Quận 3</a></li>
+                                <li><a href="">Quận 4</a></li>
+                                <li><a href="">Quận 5</a></li>
+                                <li><a href="">Quận 6</a></li>
+                                <li><a href="">Quận 7</a></li>
+                                <li><a href="">Quận 8</a></li>
+                                <li><a href="">Quận 10</a></li>
+                                <li><a href="">Quận 11</a></li>
+                                <li><a href="">Quận 12</a></li>
                             </ul>
                         </li>
-                        <li>
-                            <p class="text-uppercase">VÙNG ĐẤT</p>
+                        <li class="col-md-3">
+                            <p class="text-uppercase">ĐIỂM ĐẾN</p>
+                            <ul class="child-menu-footer">
+                                <li><a href="">Thắng cảnh</a></li>
+                                <li><a href="">Điểm đến văn hóa</a></li>
+                                <li><a href="">Điểm đến tôn giáo</a></li>
+                                <li><a href="">Điểm tham quan</a></li>
+                                <li><a href="">Gợi ý về điểm đến</a></li>
+                                <li><a href="">Câu chuyện lữ hành</a></li>
+                                <li><a href="">Câu chuyện lữ hành</a></li>
+                            </ul>
                         </li>
-                        <li>
+                        <li class="col-md-3">
                             <p class="text-uppercase">VÙNG ĐẤT</p>
+                            <ul class="child-menu-footer">
+                                <li><a href="#">Thắng cảnh</a></li>
+                                <li><a href="">Điểm đến văn hóa</a></li>
+                                <li><a href="">Điểm đến tôn giáo</a></li>
+                                <li><a href="">Điểm tham quan</a></li>
+                                <li><a href="">Gợi ý về điểm đến</a></li>
+                                <li><a href="">Câu chuyện lữ hành</a></li>
+                                <li><a href="">Câu chuyện lữ hành</a></li>
+                            </ul>
                         </li>
-                        <li>
+                        <li class="col-md-3">
                             <p class="text-uppercase">VÙNG ĐẤT</p>
+                            <ul class="child-menu-footer">
+                                <li><a href="">Thắng cảnh</a></li>
+                                <li><a href="">Điểm đến văn hóa</a></li>
+                                <li><a href="">Điểm đến tôn giáo</a></li>
+                                <li><a href="">Điểm tham quan</a></li>
+                                <li><a href="">Gợi ý về điểm đến</a></li>
+                                <li><a href="">Câu chuyện lữ hành</a></li>
+                                <li><a href="">Câu chuyện lữ hành</a></li>
+                            </ul>
                         </li>
-                        <li>
+                        <li class="col-md-3">
                             <p class="text-uppercase">VÙNG ĐẤT</p>
+                            <ul class="child-menu-footer">
+                                <li><a href="">Thắng cảnh</a></li>
+                                <li><a href="">Điểm đến văn hóa</a></li>
+                                <li><a href="">Điểm đến tôn giáo</a></li>
+                                <li><a href="">Điểm tham quan</a></li>
+                                <li><a href="">Gợi ý về điểm đến</a></li>
+                                <li><a href="">Câu chuyện lữ hành</a></li>
+                                <li><a href="">Câu chuyện lữ hành</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
@@ -943,16 +1268,16 @@
                         <img src="../images/logo-1.png" alt="">
                     </div>
                     <div class="item">
-                        <a href="#!" class="c-black">Về chúng tôi</a>
-                        <a href="#!" class="c-black">Về chúng tôi</a>
+                        <a href="" class="c-black">Về chúng tôi</a>
+                        <a href="" class="c-black">Về chúng tôi</a>
                     </div>
                     <div class="item">
-                        <a href="#!" class="c-black">Về chúng tôi</a>
-                        <a href="#!" class="c-black">Về chúng tôi</a>
+                        <a href="" class="c-black">Về chúng tôi</a>
+                        <a href="" class="c-black">Về chúng tôi</a>
                     </div>
                     <div class="item">
-                        <a href="#!" class="c-black">Về chúng tôi</a>
-                        <a href="#!" class="c-black">Về chúng tôi</a>
+                        <a href="" class="c-black">Về chúng tôi</a>
+                        <a href="" class="c-black">Về chúng tôi</a>
                     </div>
                 </div>
                 <div class="mt-5 list-site">
@@ -1001,22 +1326,14 @@
     <script src="../scripts/jquery.min.js"></script>
     <script src="../scripts/bootstrap.min.js"></script>
     <script src="../scripts/all.js"></script>
+    <script src="../scripts/fancybox.umd.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="../scripts/swiper-bundle.min.js"></script>
     <script src="../scripts/jquery.mmenu.all.js"></script>
     <script src="../scripts/main.js"></script>
     <script>
         var swiper = new Swiper(".banner-home-swipper", {});
-        var swiper = new Swiper(".type-tow-swiper", {});
-        var swiper = new Swiper(".listSiteSwiper", {
-            slidesPerView: 3,
-            spaceBetween: 30,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
         var swiper = new Swiper(".topSuggestSwiper", {
             loop: true,
             slidesPerView: 3,
@@ -1067,6 +1384,36 @@
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
+            },
+        });
+
+        Fancybox.bind('[data-fancybox="gallery"]', {
+            dragToClose: false,
+
+            Toolbar: false,
+            closeButton: "top",
+
+            Image: {
+                zoom: false,
+            },
+
+            on: {
+                initCarousel: (fancybox) => {
+                    const slide = fancybox.Carousel.slides[fancybox.Carousel.page];
+
+                    fancybox.$container.style.setProperty(
+                        "--bg-image",
+                        `url("${slide.$thumb.src}")`
+                    );
+                },
+                "Carousel.change": (fancybox, carousel, to, from) => {
+                    const slide = carousel.slides[to];
+
+                    fancybox.$container.style.setProperty(
+                        "--bg-image",
+                        `url("${slide.$thumb.src}")`
+                    );
+                },
             },
         });
     </script>

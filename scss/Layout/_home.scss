@@ -36,5 +36,11 @@ section {
     &:hover {
         box-shadow: 0 0 5px 1px $color-main;
         border-color: $color-main;
+
+        &.c-black {
+            color: white;
+            background-color: $color-main;
+        }
     }
+
 }
