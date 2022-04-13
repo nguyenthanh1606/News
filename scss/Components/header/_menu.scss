@@ -40,7 +40,7 @@
                 transition: all 0.3s ease-in-out;
                 width: 5px;
                 height: 5px;
-                left: 0;
+                left: -5px;
                 top: calc(50% - 2px);
                 border-radius: 50%;
                 color: #000;
@@ -102,6 +102,29 @@
         &:hover {
             &:before {
                 content: none;
+            }
+        }
+    }
+}
+
+header.site-2.pages {
+    .menu-top.site-2 {
+        ul.menu li {
+            a {
+                color: #000;
+            }
+
+            &.active a,
+            &:hover a {
+                color: #fff;
+            }
+
+            &:not(:first-child)::before {
+                background-color: #000;
+            }
+
+            &.active::before {
+                color: #fff;
             }
         }
     }

@@ -3,17 +3,17 @@ $(document).ready(function () {
     $('.preloader').remove();
     //   ////////////////////////////////////////// 
 
-    $(function () {
-        var menu = $('header').offset().top;
-        $(window).scroll(function () {
-            var winTop = $(window).scrollTop();
-            if (winTop > menu) {
-                $('header').addClass('is-fixed');
-            } else {
-                $('header').removeClass('is-fixed');
-            }
-        });
-    });
+    // $(function () {
+    //     var menu = $('header').offset().top;
+    //     $(window).scroll(function () {
+    //         var winTop = $(window).scrollTop();
+    //         if (winTop > menu) {
+    //             $('header').addClass('is-fixed');
+    //         } else {
+    //             $('header').removeClass('is-fixed');
+    //         }
+    //     });
+    // });
 
     //   ////////////////////////////////////////// 
 

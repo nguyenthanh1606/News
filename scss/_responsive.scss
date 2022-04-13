@@ -12,6 +12,26 @@
     .banner-home .banner-top .banner-top--left .banner-title h1 {
         font-size: 3rem;
     }
+
+    header.site-2 {
+        .menu-top {
+            grid-column: 4/10;
+        }
+
+        .search-box {
+            grid-column: 10/12;
+
+            .btn-search:focus~.input-search {
+                width: 200px;
+            }
+        }
+    }
+
+    .aboutUs-top {
+        .title {
+            font-size: 2rem;
+        }
+    }
 }
 
 @media screen and (max-width: 1024px) {

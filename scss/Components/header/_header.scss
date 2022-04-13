@@ -131,6 +131,11 @@ header.site-2 {
     border-bottom: none;
     transition: all 0.3s ease-in-out;
 
+    &.pages {
+        position: relative;
+        background-color: white;
+    }
+
     &.is-fixed {
         position: fixed;
         top: 0;
