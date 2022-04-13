@@ -1334,6 +1334,14 @@
     <script src="../scripts/main.js"></script>
     <script>
         var swiper = new Swiper(".banner-home-swipper", {});
+        var swiper = new Swiper(".listSiteSwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
         var swiper = new Swiper(".topSuggestSwiper", {
             loop: true,
             slidesPerView: 3,
