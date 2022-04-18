@@ -82,3 +82,17 @@ a {
 .font-extraBold {
     font-weight: 700;
 }
+
+.rounded {
+    &-1 {
+        border-radius: 1rem;
+    }
+
+    &-15 {
+        border-radius: 1.5rem;
+    }
+
+    &-2 {
+        border-radius: 2rem;
+    }
+}

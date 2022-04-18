@@ -134,6 +134,10 @@ header.site-2 {
     &.pages {
         position: relative;
         background-color: white;
+
+        .header {
+            border-bottom: 1px solid #d1d1d1;
+        }
     }
 
     &.is-fixed {
