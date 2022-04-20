@@ -3415,6 +3415,37 @@ section {
   line-height: 50px;
 }
 
+.list-bottom {
+  border-top: 1px solid #cac9c9;
+  padding-top: 1.5rem;
+  padding-left: 1rem;
+}
+
+.list-bottom ul {
+  display: block;
+  padding-left: 0;
+  list-style-type: none;
+  margin-bottom: 1.5rem;
+}
+
+.list-bottom ul li {
+  margin-bottom: 0.15rem;
+}
+
+.list-bottom ul li span:first-child {
+  color: #888585;
+  display: inline-block;
+  width: 150px;
+}
+
+.list-bottom ul li span:last-child {
+  font-weight: bold;
+}
+
+.list-bottom ul li a {
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 1500px) {
   .wrapper {
     max-width: 1488px;

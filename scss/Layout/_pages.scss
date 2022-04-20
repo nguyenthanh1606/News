@@ -595,4 +595,37 @@
             line-height: 50px;
         }
     }
+
+
+}
+
+.list-bottom {
+    border-top: 1px solid #cac9c9;
+    padding-top: 1.5rem;
+    padding-left: 1rem;
+
+    ul {
+        display: block;
+        padding-left: 0;
+        list-style-type: none;
+        margin-bottom: 1.5rem;
+
+        li {
+            margin-bottom: 0.15rem;
+
+            span:first-child {
+                color: #888585;
+                display: inline-block;
+                width: 150px;
+            }
+
+            span:last-child {
+                font-weight: bold;
+            }
+
+            a {
+                text-decoration: underline;
+            }
+        }
+    }
 }
