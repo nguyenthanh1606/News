@@ -48,6 +48,7 @@
 
             &.active {
                 background-color: black;
+                z-index: 1;
 
                 &:before {
                     content: none;
@@ -78,8 +79,7 @@
 
                 background-color: black;
                 border-radius: 2rem;
-
-
+                z-index: 1;
             }
         }
     }

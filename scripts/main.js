@@ -127,6 +127,9 @@ $(document).ready(function () {
             }
         });
 
+    $('.showOnPage').click(function () {
+        $('.aboutUs .sumary').toggleClass("show");
+    });
 });
 
 

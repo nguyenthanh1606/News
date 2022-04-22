@@ -150,6 +150,7 @@ header.site-2 {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         row-gap: 15px;
+        height: 100%;
     }
 
     .logo {
@@ -159,7 +160,7 @@ header.site-2 {
         grid-column: 1/4;
 
         &:before {
-            content: "";
+            content: none;
             width: 55%;
             height: 8px;
             background-color: #0450bf;
@@ -208,6 +209,7 @@ header.site-2 {
     justify-content: center;
 
     .notify {
+        font-size: 12px;
         font-family: "SVN-Proxima Nova";
         font-weight: bold;
         text-transform: uppercase;
